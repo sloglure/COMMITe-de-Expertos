@@ -2,10 +2,10 @@
 <html lang="es">
 
 <head>
-    <!-- En la cabecera se centraliza la configuración técnica del documento, por lo tanto aquí se declara codificación, escala adaptable y dependencias visuales necesarias para que el contenido se renderice de forma estable en distintos dispositivos. -->
+    <!-- En la cabecera se centraliza la configuración técnica del documento, por lo tanto aquí se declara codificación, escala adaptable y dependencias visuales necesarias para que el contenido se renderice de forma estable en distintos dispositivos. Estos comentarios ayudan a entender el propósito de cada elemento en la cabecera, dado que hay compañeros que pueden tener dudas sobre su funcionamiento, pues, nunca se sabe. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Este enlace importa Bootstrap desde CDN, así que la maquetación puede construirse con componentes y utilidades reutilizables que aceleran el desarrollo y mantienen coherencia de interfaz. -->
+    <!-- Este enlace importa Bootstrap desde CDN, así que la maquetación puede construirse con componentes y utilidades reutilizables que aceleran el desarrollo y mantienen coherencia de interfaz. Bueno para la experiencia de usuario, especialmente en dispositivos móviles. -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Etiquetas Semánticas de HTML</title>
@@ -19,7 +19,7 @@
 
 <body>
     <header>
-        <!-- El encabezado contiene la navegación global, en consecuencia se mantiene al inicio para ofrecer orientación constante y acceso inmediato a las rutas principales del sitio. -->
+        <!-- El encabezado contiene la navegación global, en consecuencia se mantiene al inicio para ofrecer orientación y acceso inmediato a las rutas principales del sitio. -->
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
@@ -66,7 +66,7 @@
         </div>
     </header>
     <main>
-        <!-- Main encapsula el contenido principal de la investigación, por ende concentra definición, beneficios, evolución, ejemplos y cierre conceptual en un flujo didáctico continuo. -->
+        <!-- Main encapsula el contenido principal de la investigación, por ende concentra definición, beneficios, evolución, ejemplos y cierre conceptual de la idea principal -->
         <div class="container my-4">
 
             <h1 class="mb-4">Etiquetas Semánticas de HTML</h1>
@@ -99,7 +99,7 @@
             </section>
 
             <section id="beneficios" class="mb-4">
-                <!-- En este apartado se aterrizan beneficios operativos, de manera que el lector conecta teoría con impactos reales en accesibilidad, SEO y mantenimiento del código. -->
+                <!-- En este apartado se aterrizan beneficios operativos, de manera que el lector conecta teoría con impactos reales en accesibilidad, SEO y mantenimiento del código. Es muy importante para comprender cómo las etiquetas semánticas mejoran la calidad del código y la experiencia del usuario. -->
                 <h2>Beneficios de utilizar etiquetas semánticas</h2>
                 <p class="texto-justificado">El empleo de etiquetas semánticas reporta tres beneficios principales:
                     mejora la accesibilidad, pues los lectores de pantalla interpretan con mayor precisión el contenido
@@ -124,7 +124,7 @@
             </section>
 
             <section id="etiquetas-estructurales" class="mb-4">
-                <!-- A partir de aquí se analiza cada etiqueta estructural por separado, además se incluye un ejemplo mínimo y una referencia de uso real dentro del propio proyecto. -->
+                <!-- A partir de aquí se analiza cada etiqueta estructural por separado, además se incluye un ejemplo mínimo y una referencia de uso real dentro proyecto -->
                 <h2>Etiquetas semánticas estructurales</h2>
                 <p class="mb-4 texto-justificado">Estas siete etiquetas constituyen el esqueleto de una página, cada una
                     con un propósito definido, un ejemplo de código y su uso concreto dentro de nuestro sitio.</p>
@@ -171,7 +171,7 @@
                     <div class="col-md-6">
                         <div class="card h-100">
                             <div class="card-body">
-                                <!-- Main separa contenido principal de bloques periféricos, en consecuencia permite navegación asistida más eficiente y una jerarquía documental más precisa. -->
+                                <!-- Main separa contenido principal de bloques periféricos, en consecuencia permite navegación asistida más eficiente y una jerarquía documental más precisa. Igualmente, consideremos que se podrán ir cambiando algunos conceptos dentro de cada sección de modo que sea mejor comprendido para lectores o miembros del equipo. -->
                                 <h3 class="h5 card-title">&lt;main&gt;</h3>
                                 <p class="card-text texto-justificado">La etiqueta main envuelve el contenido principal
                                     y único del documento, excluyendo cabecera, navegación y pie, de modo que los
@@ -311,7 +311,9 @@
     <footer class="bg-body-tertiary text-center py-3">
         <p class="mb-0">COMMITe de Expertos</p>
     </footer>
-    <!-- LINK BOOTSTRAP CDN JS NO MOVER!!! SIEMPRE VA AL FINAL DEL BODY :) -->
+    <!-- LINK BOOTSTRAP CDN JS NO MOVER!!! SIEMPRE VA AL FINAL DEL BODY :) 
+    Una explicación de esto, es que al colocar el script de Bootstrap al final del body, se asegura que todo el contenido HTML se haya cargado antes de que se ejecute el JavaScript. Es demasiado importante porque muchas funciones de Bootstrap dependen de elementos del DOM que deben estar presentes y completamente cargados para funcionar correctamente. Si el script se colocara en la cabecera, podría intentar acceder a elementos que aún no existen, lo que resultaría en errores y un comportamiento inesperado. -->
+    -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
