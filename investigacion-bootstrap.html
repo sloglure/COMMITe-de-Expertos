@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- En este bloque se declara la configuración global del documento, por lo tanto se establece codificación, adaptación a pantallas y vínculos de estilo antes de renderizar el contenido visible. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Aquí se incorpora Bootstrap desde CDN, así que el proyecto puede usar utilidades y componentes listos para maquetar con consistencia visual y menor esfuerzo de implementación. -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Investigación sobre Bootstrap</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .texto-justificado {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- El encabezado concentra la navegación principal, en consecuencia se ubica primero para ofrecer acceso rápido a enlaces clave del sitio en cualquier página. -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                        <div class="container-fluid">
+                            <!-- La marca funciona como identificador visual del proyecto, además puede actuar como acceso natural a la portada cuando se defina una ruta real. -->
+                            <a class="navbar-brand" href="#">Logito</a>
+                            <!-- Este botón activa el menú colapsable en móviles, de modo que se conserva usabilidad sin saturar la pantalla en resoluciones pequeñas. -->
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <!-- El contenedor colapsable administra los enlaces de navegación y responde a breakpoints, así la estructura permanece clara tanto en escritorio como en celular. -->
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Features</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Pricing</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Dropdown link
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Main agrupa el contenido académico de la investigación, por ende aquí se organiza la explicación completa por secciones temáticas y progresivas. -->
+        <div class="container my-4">
+
+            <h1 class="mb-4">Investigación sobre Bootstrap</h1>
+
+            <section id="proposito" class="mb-4">
+                <!-- Esta sección abre el documento con el objetivo central, por consiguiente orienta la lectura y define el alcance conceptual que guiará los apartados siguientes. -->
+                <h2>Propósito de la investigación</h2>
+                <p class="texto-justificado">La presente investigación tiene como propósito comprender a fondo qué es
+                    Bootstrap, conocer las ventajas que ofrece su utilización como framework CSS, entender el concepto
+                    de diseño responsivo y dominar el uso de su sistema de grillas, de sus componentes reutilizables y
+                    de su diferencia frente al CSS personalizado, de modo que el equipo pueda aplicar estos
+                    conocimientos de forma coherente en la construcción de este sitio, documentando además qué
+                    componentes del framework fueron empleados en cada una de las páginas del proyecto.</p>
+            </section>
+
+            <section id="que-es" class="mb-4">
+                <!-- En este tramo se construye la base teórica, además se contextualiza el origen histórico del framework para comprender su adopción y su propósito técnico. -->
+                <h2>¿Qué es Bootstrap?</h2>
+                <p class="texto-justificado">Bootstrap es un framework de código abierto, creado por Mark Otto y Jacob
+                    Thornton durante su paso por Twitter y publicado en 2011, que reúne una colección de herramientas y
+                    componentes predefinidos para el desarrollo de interfaces web mediante HTML, CSS y JavaScript, entre
+                    los cuales figuran un sistema de grillas, estilos para tipografía, botones, formularios, barras de
+                    navegación y elementos interactivos como modales, carruseles y menús desplegables, todo ello pensado
+                    para construir sitios responsivos y visualmente atractivos con el menor esfuerzo posible.</p>
+                <p class="texto-justificado">Su filosofía se sustenta en el enfoque mobile first, esto es, diseñar
+                    primero para dispositivos móviles y luego adaptar el resultado a pantallas mayores, garantizando así
+                    una experiencia óptima en cualquier tamaño, gracias a su amplia adopción y a su comunidad activa,
+                    dispone de abundante documentación, tutoriales y soporte, y es el framework elegido por numerosos
+                    sitios y aplicaciones populares, distinguiéndose frente a alternativas como Foundation, Bulma o
+                    Tailwind CSS por su equilibrio entre facilidad de uso, cantidad de componentes incluidos y
+                    consistencia visual.</p>
+            </section>
+
+            <section id="ventajas" class="mb-4">
+                <!-- Aquí se argumenta el valor práctico del framework, de manera que se vincula la teoría con beneficios reales de productividad, mantenimiento y coherencia estética. -->
+                <h2>Ventajas de utilizar un framework CSS</h2>
+                <p class="texto-justificado">Utilizar un framework CSS reporta beneficios considerables al momento de
+                    construir una interfaz: acelera el desarrollo al entregar componentes listos para usar, unifica la
+                    apariencia visual de todas las páginas, asegura la compatibilidad entre navegadores apoyándose en
+                    hojas de normalización como Normalize.css, incorpora la responsividad de manera casi automática y
+                    reduce la cantidad de estilos que deben escribirse a mano, permitiendo que el equipo se concentre en
+                    la estructura y en el contenido en lugar de en detalles repetitivos de estilo.</p>
+            </section>
+
+            <section id="responsivo" class="mb-4">
+                <!-- Esta parte explica la adaptabilidad de interfaz, por ello introduce breakpoints y media queries como mecanismos clave para sostener legibilidad en distintos dispositivos. -->
+                <h2>Concepto de diseño responsivo</h2>
+                <p class="texto-justificado">El diseño responsivo es la capacidad de una página para adaptarse de forma
+                    automática al ancho del dispositivo que la visita, sea un computador de escritorio, una tableta o un
+                    teléfono móvil, Bootstrap lo implementa mediante puntos de interrupción, conocidos como breakpoints,
+                    que definen en qué tamaño de pantalla cambia la disposición de los elementos, complementados por las
+                    media queries de CSS y por unidades relativas como rem y em, de modo que el contenido se reorganiza
+                    y sigue siendo legible en cualquier contexto.</p>
+            </section>
+
+            <section id="grillas" class="mb-4">
+                <!-- En esta sección se detalla la arquitectura de layout, por consiguiente se relaciona container, row y col como piezas complementarias del sistema de doce columnas. -->
+                <h2>Uso del sistema de grillas: container, row y col</h2>
+                <p class="texto-justificado">El sistema de grillas organiza el contenido en doce columnas dentro de tres
+                    niveles de contenedores, el container define el área central de la página, la fila, row, agrupa las
+                    columnas que la componen y cada columna, col, asigna a un bloque su ancho proporcional, de manera
+                    que la combinación de estos tres elementos permite construir diseños flexibles y responsivos sin
+                    recurrir a CSS adicional, como se observa en el siguiente ejemplo, donde una columna ocupa cuatro
+                    espacios y la otra los ocho restantes en pantallas medianas, apilándose en dispositivos pequeños.
+                </p>
+                <pre><code>&lt;div class="container"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-md-4"&gt;Contenido izquierdo&lt;/div&gt;
+    &lt;div class="col-md-8"&gt;Contenido principal&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </section>
+
+            <section id="componentes" class="mb-4">
+                <!-- Aquí se evidencia la reutilización como estrategia, además se explica que la composición de componentes acelera la entrega sin sacrificar homogeneidad visual. -->
+                <h2>Uso de componentes reutilizables</h2>
+                <p class="texto-justificado">El framework ofrece un amplio catálogo de componentes reutilizables,
+                    botones, tarjetas, barras de navegación, alertas, insignias, migas de pan, paginación, barras de
+                    progreso, indicadores de carga, tooltips, popovers, acordeones, carruseles y pestañas, entre otros,
+                    que se incorporan a la página mediante clases predefinidas y se combinan entre sí para construir
+                    interfaces completas con rapidez y uniformidad, la interactividad de muchos de estos elementos, como
+                    modales, desplegables o carruseles, es gestionada por los plugins de JavaScript incluidos, apoyados
+                    en la librería Popper.js para el correcto posicionamiento de los componentes emergentes.</p>
+            </section>
+
+            <section id="personalizacion" class="mb-4">
+                <!-- Este segmento destaca la flexibilidad del framework, por lo tanto deja claro que se puede mantener la base de Bootstrap y, a la vez, construir identidad de marca propia. -->
+                <h2>Personalización del framework</h2>
+                <p class="texto-justificado">Pese a venir con estilos predeterminados, Bootstrap admite una
+                    personalización profunda mediante variables CSS y Sass, sobrescritura de clases y utilidades de
+                    espaciado basadas en las claves m, p y gap, además de clases para sombras, bordes redondeados y
+                    opacidad, y una paleta de colores semánticos que distingue primario, secundario, éxito, advertencia,
+                    peligro, información, claro, oscuro y blanco, con lo cual cada proyecto puede adaptar el framework a
+                    su propia identidad visual sin tocar el código fuente original.</p>
+            </section>
+
+            <section id="diferencia" class="mb-4">
+                <!-- En este apartado se compara enfoque industrial frente a diseño desde cero, de modo que se entienden mejor los intercambios entre velocidad, control y mantenibilidad. -->
+                <h2>Diferencia entre Bootstrap y CSS personalizado</h2>
+                <p class="texto-justificado">La diferencia esencial entre Bootstrap y el CSS personalizado reside en el
+                    origen de los estilos, con Bootstrap se parte de una base completa, probada y documentada que
+                    garantiza velocidad y consistencia, mientras que con CSS propio cada regla se escribe desde cero,
+                    otorgando un control total sobre el diseño pero demandando más tiempo y mayor cuidado para mantener
+                    la uniformidad y la compatibilidad entre navegadores, en proyectos con plazos acotados y varios
+                    integrantes, como el presente, el framework resulta la opción más conveniente, pudiendo combinarse
+                    con estilos propios para afinar detalles puntuales.</p>
+            </section>
+
+            <section id="uso-en-sitio" class="mb-4">
+                <!-- Aquí se conecta la teoría con la implementación real del equipo, en consecuencia se mapean componentes concretos y su función dentro de la experiencia final del sitio. -->
+                <h2>Componentes que el equipo usó en el sitio</h2>
+                <p class="texto-justificado">En este sitio el equipo utilizó varios de los componentes estudiados: la
+                    barra de navegación responsiva, presente en la cabecera de todas las páginas y encargada de la
+                    navegación principal, el sistema de grillas, que ordena los contenidos de cada página, las tarjetas,
+                    empleadas para presentar los proyectos del portafolio en los perfiles de los integrantes, los
+                    botones, que enlazan hacia los perfiles externos, y las insignias, que indican el estado de cada
+                    proyecto, además de utilidades de espaciado y redondeo para afinar la presentación de los bloques.
+                </p>
+            </section>
+
+            <section id="integraciones" class="mb-4">
+                <!-- Este bloque extiende la discusión hacia ecosistemas modernos, además muestra cómo Bootstrap puede convivir con frameworks de interfaz y gestores de contenido. -->
+                <h2>Integración con otros ecosistemas</h2>
+                <p class="texto-justificado">Finalmente, Bootstrap se integra con otros ecosistemas de desarrollo, como
+                    las bibliotecas React, Vue.js y Angular, mediante adaptaciones como React Bootstrap, Vue Bootstrap y
+                    ng Bootstrap, y también con WordPress, donde sirve de base para construir temas y complementos, lo
+                    que multiplica las posibilidades del framework más allá de las páginas estáticas.</p>
+            </section>
+
+            <section id="conclusion" class="mb-4">
+                <!-- La conclusión sintetiza hallazgos y utilidad práctica, por ende cierra el hilo argumental con una valoración aplicable al desarrollo del proyecto actual. -->
+                <h2>Conclusión</h2>
+                <p class="texto-justificado">En síntesis, Bootstrap es una herramienta potente y versátil que facilita
+                    la creación de interfaces atractivas y responsivas gracias a sus componentes predefinidos, a su
+                    sistema de grillas flexible y a sus opciones de personalización, su enfoque mobile first, su amplia
+                    adopción y su versatilidad lo convierten en una elección sólida para el desarrollo web moderno, y su
+                    correcta comprensión, como la alcanzada en esta investigación, permite al equipo construir un sitio
+                    coherente, accesible y profesional.</p>
+            </section>
+
+        </div>
+    </main>
+    <footer class="bg-body-tertiary text-center py-3">
+        <p class="mb-0">COMMITe de Expertos</p>
+    </footer>
+    <!-- LINK BOOTSTRAP CDN JS NO MOVER!!! SIEMPRE VA AL FINAL DEL BODY :) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

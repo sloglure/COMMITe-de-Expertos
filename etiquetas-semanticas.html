@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- En la cabecera se centraliza la configuración técnica del documento, por lo tanto aquí se declara codificación, escala adaptable y dependencias visuales necesarias para que el contenido se renderice de forma estable en distintos dispositivos. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Este enlace importa Bootstrap desde CDN, así que la maquetación puede construirse con componentes y utilidades reutilizables que aceleran el desarrollo y mantienen coherencia de interfaz. -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Etiquetas Semánticas de HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .texto-justificado {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- El encabezado contiene la navegación global, en consecuencia se mantiene al inicio para ofrecer orientación constante y acceso inmediato a las rutas principales del sitio. -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                        <div class="container-fluid">
+                            <!-- La marca funciona como identificador visual compartido, además puede convertirse en enlace de retorno al inicio cuando se definan rutas finales del proyecto. -->
+                            <a class="navbar-brand" href="#">Logito</a>
+                            <!-- El botón de colapso resuelve la navegación en pantallas pequeñas, de modo que la barra conserva legibilidad sin saturar el ancho disponible. -->
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <!-- El bloque colapsable agrupa enlaces y desplegables, por ello adapta su visibilidad según el breakpoint activo y mejora la experiencia responsive. -->
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Features</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Pricing</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Dropdown link
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Main encapsula el contenido principal de la investigación, por ende concentra definición, beneficios, evolución, ejemplos y cierre conceptual en un flujo didáctico continuo. -->
+        <div class="container my-4">
+
+            <h1 class="mb-4">Etiquetas Semánticas de HTML</h1>
+
+            <section id="proposito" class="mb-4">
+                <!-- Esta sección introduce el objetivo del documento, por consiguiente prepara el marco de lectura y explicita el alcance pedagógico de toda la investigación. -->
+                <h2>Propósito de la investigación</h2>
+                <p class="texto-justificado">La presente investigación tiene como propósito comprender qué son las
+                    etiquetas semánticas de HTML, por qué resultan fundamentales para la accesibilidad, el
+                    posicionamiento en buscadores y el mantenimiento del código, y cómo aplicarlas correctamente en la
+                    construcción de este sitio, documentando para cada etiqueta estructural su propósito, un ejemplo de
+                    código y el lugar concreto de nuestro propio proyecto donde fue empleada.</p>
+            </section>
+
+            <section id="definicion" class="mb-4">
+                <!-- Aquí se establece la diferencia conceptual entre semántica y presentación, además se aclara por qué declarar significado aporta ventajas técnicas y comunicativas. -->
+                <h2>Definición y diferencia con las etiquetas no semánticas</h2>
+                <p class="texto-justificado">Las etiquetas semánticas son aquellas que describen el significado del
+                    contenido que encierran en lugar de limitarse a definir su apariencia visual, brindando a los
+                    navegadores y a los motores de búsqueda información valiosa sobre la estructura y la intención de
+                    cada bloque, lo que favorece la accesibilidad y la optimización para buscadores, también conocida
+                    como SEO, frente a ellas, las etiquetas no semánticas como div y span solo agrupan contenido sin
+                    declarar su función, mientras que etiquetas como header, article o footer comunican claramente el
+                    papel de cada porción de la página.</p>
+                <pre><code>&lt;div class="header"&gt;Bienvenido&lt;/div&gt;
+
+&lt;header&gt;
+  &lt;h1&gt;Bienvenido&lt;/h1&gt;
+&lt;/header&gt;</code></pre>
+            </section>
+
+            <section id="beneficios" class="mb-4">
+                <!-- En este apartado se aterrizan beneficios operativos, de manera que el lector conecta teoría con impactos reales en accesibilidad, SEO y mantenimiento del código. -->
+                <h2>Beneficios de utilizar etiquetas semánticas</h2>
+                <p class="texto-justificado">El empleo de etiquetas semánticas reporta tres beneficios principales:
+                    mejora la accesibilidad, pues los lectores de pantalla interpretan con mayor precisión el contenido
+                    para usuarios con discapacidades, favorece el posicionamiento en buscadores, ya que los motores
+                    comprenden mejor la jerarquía y el tema de cada página, y facilita el mantenimiento, porque un
+                    código legible permite a cualquier integrante del equipo entender rápidamente la estructura y el
+                    propósito de cada sección.</p>
+            </section>
+
+            <section id="evolucion" class="mb-4">
+                <!-- Esta sección recorre la evolución histórica de la maquetación web, por consiguiente evidencia el salto cualitativo que aportó HTML5 al introducir estructura con significado explícito. -->
+                <h2>Evolución de la semántica en HTML</h2>
+                <p class="texto-justificado">La semántica en HTML no siempre existió, en las primeras versiones la
+                    maquetación se resolvía con tablas, que organizaban el contenido en filas y columnas pero aportaban
+                    escasa información sobre su significado, complicaban el mantenimiento y confundían a los lectores de
+                    pantalla, y más tarde se popularizó el denominado div soup, una práctica consistente en anidar
+                    numerosos contenedores genéricos para lograr la apariencia deseada, con las mismas carencias de
+                    significado, legibilidad y accesibilidad, recién con la llegada de HTML5 se incorporaron etiquetas
+                    estructurales propias, como header, nav, main, section, article, aside y footer, que permiten
+                    describir el propósito de cada bloque y construir documentos ordenados, comprensibles y accesibles.
+                </p>
+            </section>
+
+            <section id="etiquetas-estructurales" class="mb-4">
+                <!-- A partir de aquí se analiza cada etiqueta estructural por separado, además se incluye un ejemplo mínimo y una referencia de uso real dentro del propio proyecto. -->
+                <h2>Etiquetas semánticas estructurales</h2>
+                <p class="mb-4 texto-justificado">Estas siete etiquetas constituyen el esqueleto de una página, cada una
+                    con un propósito definido, un ejemplo de código y su uso concreto dentro de nuestro sitio.</p>
+                <div class="row g-3">
+
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <!-- Se describe la etiqueta header porque inaugura la jerarquía visual y organizativa del documento, de modo que ubica identidad y navegación en un bloque reconocible. -->
+                                <h3 class="h5 card-title">&lt;header&gt;</h3>
+                                <p class="card-text texto-justificado">El encabezado define la cabecera de un documento
+                                    o de una sección, albergando habitualmente la identidad del sitio, el logotipo y la
+                                    barra de navegación.</p>
+                                <pre><code>&lt;header&gt;
+  &lt;nav class="navbar navbar-expand-lg"&gt;...&lt;/nav&gt;
+&lt;/header&gt;</code></pre>
+                                <p class="card-text mb-0 texto-justificado">En nuestro sitio: todas las páginas del
+                                    proyecto lo emplean, incluyendo main.html, los perfiles de los integrantes y las
+                                    páginas de investigación, para alojar la barra de navegación compartida.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <!-- El bloque nav delimita navegación principal, por ello ayuda a lectores de pantalla y buscadores a distinguir enlaces de estructura frente a enlaces secundarios. -->
+                                <h3 class="h5 card-title">&lt;nav&gt;</h3>
+                                <p class="card-text texto-justificado">La etiqueta nav delimita un conjunto de enlaces
+                                    de navegación, indicando a los usuarios y a los buscadores cuáles son los accesos
+                                    principales del sitio.</p>
+                                <pre><code>&lt;nav class="navbar navbar-expand-lg bg-body-tertiary"&gt;
+  &lt;ul class="navbar-nav"&gt;
+    &lt;li&gt;&lt;a class="nav-link" href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+                                <p class="card-text mb-0 texto-justificado">En nuestro sitio: está presente en la
+                                    cabecera de cada página, con el menú que comunica las distintas secciones del
+                                    proyecto.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <!-- Main separa contenido principal de bloques periféricos, en consecuencia permite navegación asistida más eficiente y una jerarquía documental más precisa. -->
+                                <h3 class="h5 card-title">&lt;main&gt;</h3>
+                                <p class="card-text texto-justificado">La etiqueta main envuelve el contenido principal
+                                    y único del documento, excluyendo cabecera, navegación y pie, de modo que los
+                                    lectores de pantalla pueden saltar directamente al material esencial.</p>
+                                <pre><code>&lt;main&gt;
+  &lt;div class="container my-4"&gt;
+    &lt;h1&gt;Bienvenido&lt;/h1&gt;
+  &lt;/div&gt;
+&lt;/main&gt;</code></pre>
+                                <p class="card-text mb-0 texto-justificado">En nuestro sitio: en main.html permanece aún
+                                    vacía, esperando el contenido de portada, mientras que perfil-ignacio.html e
+                                    investigacion-bootstrap.html la emplean para envolver todo su contenido.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <!-- Section organiza contenidos por tema, además facilita que cada bloque mantenga foco conceptual y lectura progresiva dentro del documento. -->
+                                <h3 class="h5 card-title">&lt;section&gt;</h3>
+                                <p class="card-text texto-justificado">La etiqueta section agrupa contenido
+                                    temáticamente relacionado dentro de una página, dotando de organización a los
+                                    bloques que comparten un mismo asunto.</p>
+                                <pre><code>&lt;section id="presentacion" class="row align-items-center"&gt;
+  &lt;h2&gt;Presentación&lt;/h2&gt;
+&lt;/section&gt;</code></pre>
+                                <p class="card-text mb-0 texto-justificado">En nuestro sitio: en perfil-ignacio.html
+                                    organiza presentación, intereses, habilidades y portafolio, y en
+                                    investigacion-bootstrap.html delimita cada tema de la investigación.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <!-- Article representa unidades autocontenidas, por lo tanto su uso favorece reutilización de bloques y distribución independiente sin perder contexto. -->
+                                <h3 class="h5 card-title">&lt;article&gt;</h3>
+                                <p class="card-text texto-justificado">La etiqueta article representa contenido
+                                    independiente y autocontenido, comprensible por sí mismo, como un artículo, una
+                                    noticia o una entrada, lo que permite distribuirlo o reutilizarlo sin perder
+                                    sentido.</p>
+                                <pre><code>&lt;article class="card h-100"&gt;
+  &lt;h3&gt;identity-generator&lt;/h3&gt;
+  &lt;p&gt;CLI de identidades sintéticas.&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+                                <p class="card-text mb-0 texto-justificado">En nuestro sitio: en perfil-ignacio.html
+                                    cada proyecto del portafolio, opencode-sdd-kit, bot-epub-translater e
+                                    identity-generator, se presenta dentro de una etiqueta article.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <!-- Aside se explica como contenedor complementario, de modo que el equipo pueda distinguir contenido nuclear de contenido lateral o contextual. -->
+                                <h3 class="h5 card-title">&lt;aside&gt;</h3>
+                                <p class="card-text texto-justificado">La etiqueta aside contiene información
+                                    complementaria al contenido principal, como barras laterales, anuncios o enlaces
+                                    relacionados, que puede retirarse sin afectar la comprensión del material central.
+                                </p>
+                                <pre><code>&lt;aside&gt;
+  &lt;h2&gt;Noticias recientes&lt;/h2&gt;
+  &lt;p&gt;Contenido relacionado.&lt;/p&gt;
+&lt;/aside&gt;</code></pre>
+                                <p class="card-text mb-0 texto-justificado">En nuestro sitio: aún no se ha empleado,
+                                    pues los perfiles y las investigaciones prescinden de contenido lateral, quedando
+                                    disponible para una futura sección complementaria.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <!-- Footer cierra documento o sección con metadatos finales, además concentra autoría y créditos para ofrecer un remate consistente en todas las páginas. -->
+                                <h3 class="h5 card-title">&lt;footer&gt;</h3>
+                                <p class="card-text texto-justificado">La etiqueta footer define el pie de un documento
+                                    o de una sección, reservado habitualmente para la autoría, los derechos, los enlaces
+                                    secundarios o los créditos del sitio.</p>
+                                <pre><code>&lt;footer class="bg-body-tertiary text-center py-3"&gt;
+  &lt;p&gt;COMMITe de Expertos&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+                                <p class="card-text mb-0 texto-justificado">En nuestro sitio: todas las páginas lo
+                                    incluyen, con el nombre del equipo y la atribución correspondiente.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="contenido-texto" class="mb-4">
+                <!-- En este tramo se amplía la semántica hacia etiquetas de texto, por consiguiente se explica cómo construir jerarquía informativa y cohesión narrativa dentro del contenido. -->
+                <h2>Etiquetas de contenido y texto</h2>
+                <p class="texto-justificado">Además de las etiquetas estructurales, HTML dispone de una jerarquía de
+                    contenido y texto que ordena la información, los encabezados h1 a h6 establecen niveles de
+                    importancia, debiendo existir un único h1 por página, mientras que p define párrafos, blockquote y q
+                    citan material ajeno, en bloque o en línea, y ul, ol y li componen listas, desordenadas u ordenadas,
+                    que agrupan elementos relacionados, el uso coherente de esta jerarquía refuerza la legibilidad, la
+                    accesibilidad y el posicionamiento del documento.</p>
+                <pre><code>&lt;h1&gt;Bienvenido&lt;/h1&gt;
+&lt;h2&gt;Sección principal&lt;/h2&gt;
+&lt;p&gt;Párrafo introductorio.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Elemento 1&lt;/li&gt;
+  &lt;li&gt;Elemento 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </section>
+
+            <section id="buenas-practicas" class="mb-4">
+                <!-- Esta sección traduce la teoría en criterios de implementación, además orienta decisiones concretas para evitar estructuras ambiguas o difíciles de mantener en el tiempo. -->
+                <h2>Estándares y buenas prácticas</h2>
+                <p class="texto-justificado">Para aprovechar al máximo la semántica conviene seguir algunas buenas
+                    prácticas: preferir etiquetas semánticas siempre que exista una adecuada al contenido, mantener una
+                    estructura lógica y coherente donde cada sección cumpla un papel claro, evitar tanto el exceso de
+                    contenedores genéricos como el abuso de etiquetas semánticas fuera de contexto, respetar la
+                    especificación de HTML5 y las pautas de accesibilidad, y validar periódicamente las páginas con
+                    herramientas de evaluación que verifiquen la estructura, la accesibilidad y el posicionamiento.</p>
+            </section>
+
+            <section id="conclusion" class="mb-4">
+                <!-- La conclusión cierra el recorrido conceptual, por ende sintetiza impacto técnico, valor pedagógico y aplicación práctica en el sitio desarrollado por el equipo. -->
+                <h2>Conclusión</h2>
+                <p class="texto-justificado">En síntesis, las etiquetas semánticas otorgan significado al contenido,
+                    ordenan la jerarquía del documento, mejoran la experiencia de los usuarios con lectores de pantalla,
+                    favorecen el posicionamiento en buscadores y simplifican el mantenimiento del código, su evolución
+                    desde las tablas y el div soup hasta las etiquetas estructurales de HTML5 demuestra su importancia
+                    central en el desarrollo web, y su aplicación coherente, como la realizada en este sitio, permite
+                    construir páginas comprensibles, accesibles y profesionales.</p>
+            </section>
+
+        </div>
+    </main>
+    <footer class="bg-body-tertiary text-center py-3">
+        <p class="mb-0">COMMITe de Expertos</p>
+    </footer>
+    <!-- LINK BOOTSTRAP CDN JS NO MOVER!!! SIEMPRE VA AL FINAL DEL BODY :) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
