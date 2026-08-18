@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Benjamin Mardones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f3f3f3;
+        }
+
+        .card {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            text-align: center;
+        }
+
+        .proyectos {
+            display: flex;
+            gap: 20px;
+            justify-content:center;
+        }
+
+        .proyecto {
+            width: 180px;
+            height:400px;
+            backround: #e0e0e0;
+            border: 2px solid #333;
+            padding: 15px;
+            box-sizing: border-box;
+            border-radius: 15px;
+            transition: 0.3s
+        }
+        
+        .proyecto:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 20px rgba(0, 150, 255, 0.6);
+        }
+        
+        .estado {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 8px;
+            color: white;font-size: 14px;
+            
+        }
+
+
+        .terminado {
+            background-color: green;
+        }
+        
+        .en-proceso {
+            background-color: #e6b800;
+        }
+
+        .enlaces {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .enlace {
+            width: 180px;
+            min-height: 150px;
+            padding: 20px;
+            background: #e0e0e0;
+            border: 2px solid #ccc;
+            border-radius: 15px;
+            box-sizing: border-box;
+        
+            transition: 0.3s;
+        }
+        
+        .enlace:hover {
+            transform: translateY(-5px);
+            border-color: #0096ff;
+            box-shadow: 0 0 20px rgba(0, 150, 255, 0.6);
+        }
+        
+         .enlace a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        
+            color: #0096ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .enlace img {
+            width: 90px;
+            height: 90px;
+            object-fit: contain;
+            transition: 0.3s;
+        }
+        
+        .enlace:hover img {
+            transform: scale(1.15);
+        }
+
+
+        
+        .card img {
+            display:block;
+            margin: 0 auto;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h1>Benjamin Isaac Mardones Soto</h1>
+        <img src = "img\pfp.jpg" alt="pfp de benja">
+        
+        <h2>Rol</h2>
+        <p>Ingeniero Civil Informatica, esto es un breve parrafo que funciona como un place holder</p>
+        
+        <h2>Principales intereses</h2>
+        <p>Comer y dormir</p>
+        
+        <h2>Lenguajes de programacion que maneja</h2>
+        <p>Python</p>
+        <h2>Motores de sistema conocidos</h2>
+        <p>nose jaja</p>
+    
+        <h2>Portafolio de proyectos</h2>
+        <section class="proyectos">
+            <div class = "proyecto">
+                <h3><em>Proyecto 1</em></h3>
+                <h4><i><span class="estado en-proceso">Estado: en progreso</span></i></h4>
+                <p>este es un proyecto que hace x cosa</p>
+                <h4>caracteristicas: </h4>
+                <h4>Tecnologias usadas: </h4>
+            </div>
+            
+            <div class = "proyecto">
+                <h3><em>Proyecto 2</em></h3>
+                <h4><i><span class="estado en-proceso">Estado: en progreso</span></i></h4>
+                <p>este es un proyecto que hace x cosa</p>
+                <h4>caracteristicas: </h4>
+                <h4>Tecnologias usadas: </h4>
+            </div>
+            
+            <div class = "proyecto">
+                <h3><em>Proyecto 3</em></h3>
+                <h4><i><span class="estado en-proceso">Estado: en progreso</span></i></h4>
+                <p>este es un proyecto que hace x cosa</p>
+                <h4>caracteristicas: </h4>
+                <h4>Tecnologias usadas: </h4>
+            </div>
+            
+        </section>
+        
+        <h2>Enlaces externos</h2>
+        <section class= "enlaces">
+            <div class ="enlace">
+            <a href="https://github.com/Benja-ms" target="_blank">
+                <img src="img/github.png" alt="Logo de GitHub">
+                <span>GitHub</span>
+            </a>
+            </div>
+        </section>
+            
+    </div>
+
+</body>
+
+</html>
