@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portafolio de Ignacio Ampuero</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      .texto-justificado {
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ===================== NAV BAR ===================== -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#menu-principal"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">Nombre del Equipo</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="menu-principal">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="../index.html">Inicio</a></li>
+            <li><a href="../integrantes.html">Miembros</a></li>
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Investigacion <span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="../investigacion/bootstrap.html">Investigación sobre Bootstrap</a></li>
+                <li><a href="../investigacion/etiquetas-semanticas.html">Etiquetas semánticas de HTML</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="fila-centrada">
+      <div class="panel panel-primary panel-proyecto">
+        <div class="panel-heading"><strong>opencode-sdd-kit</strong></div>
+        <div class="panel-body texto-justificado">
+          <p>
+            <strong>Propósito:</strong> Kit de desarrollo Spec-Driven (SDD) para
+            opencode que estructura cada ciclo de vida de una feature mediante
+            constitución, especificación, planificación, descomposición de
+            tareas, revisión e implementación
+          </p>
+          <p><strong>Tecnologías:</strong> TypeScript, opencode (plugins y skills)</p>
+          <p>
+            <strong>Características:</strong> 8 herramientas plugin y 6 skills
+            de agente, reglas y plantillas compartidas, 621 tests automatizados
+          </p>
+          <p>
+            <strong>Estado:</strong>
+            <span class="label label-warning">En progreso</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="panel panel-primary panel-proyecto">
+        <div class="panel-heading"><strong>bot-epub-translater</strong></div>
+        <div class="panel-body texto-justificado">
+          <p>
+            <strong>Propósito: </strong>Bot de Telegram que traduce libros
+            electrónicos (EPUB, MOBI, AZW3, FB2, RTF, DOCX) mediante LLMs Gemini
+            y DeepSeek
+          </p>
+          <p><strong>Tecnologías:</strong> Python, API de Telegram, Gemini y DeepSeek</p>
+          <p>
+            <strong>Características:</strong> Parser de EPUB y arquitectura
+            modular, proveedores de traducción intercambiables, salida bilingüe
+            y caché en disco
+          </p>
+          <p>
+            <strong>Estado:</strong>
+            <span class="label label-warning">En progreso</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="panel panel-primary panel-proyecto">
+        <div class="panel-heading"><strong>identity-generator</strong></div>
+        <div class="panel-body texto-justificado">
+          <p>
+            <strong>Propósito: </strong>CLI que genera identidades sintéticas
+            coherentes, con nombre, dirección, teléfono y código postal
+            correspondientes a una misma localidad, además de direcciones de
+            correo funcionales a las que se pueden conectar servicios de email
+            para realizar pruebas y verificaciones reales
+          </p>
+          <p><strong>Tecnologías:</strong> Python, Docker, servicios de correo electrónico (SMTP)</p>
+          <p>
+            <strong>Características:</strong> Campos coherentes por localidad
+            con validación cruzada entre datos, conexión con correos funcionales
+            a través de servicios de email que permiten enviar y verificar
+            mensajes en pruebas automatizadas, testeo robusto con una batería de
+            pruebas que valida la coherencia de las identidades, la
+            repetibilidad de la generación y el comportamiento frente a entradas
+            inválidas, exportación JSON y portapapeles, historial de uso
+          </p>
+          <p>
+            <strong>Estado:</strong>
+            <span class="label label-success">Finalizado</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <a href="../usuarios/user5.html" class="volver">← Volver a mi perfil</a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
