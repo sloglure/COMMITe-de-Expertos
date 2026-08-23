@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HTML Común - Nombre del Equipo</title>
+
+  <!-- Bootstrap 3 desde CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <!-- Nuestros propios estilos -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ===================== NAV BAR ===================== -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-principal"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Nombre del Equipo</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="menu-principal">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="integrantes.html">Miembros</a></li>
+          <li><a href="Reflexiones.html">Reflexiones</a></li>
+          <li class="dropdown active">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false">Investigacion <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="diseno.html">Diseño web</a></li>
+              <li><a href="seo.html">SEO</a></li>
+              <li><a href="hosting.html">Hosting</a></li>
+              <li class="active"><a href="html-comun.html">HTML común</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== CONTENIDO PRINCIPAL ===================== -->
+  <div class="container seccion">
+    <div class="text-center" style="margin-bottom: 30px;">
+      <h1><strong>Etiquetas HTML de uso común</strong></h1>
+      <p class="lead">Explicación y ejemplos de las etiquetas fundamentales para la estructura web.</p>
+      <hr>
+    </div>
+
+    <!-- 1. Textos y Encabezados -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>1. Textos y Encabezados</strong></h3>
+      </div>
+      <div class="panel-body">
+        <h4><strong>&lt;h1&gt; a &lt;h6&gt;</strong></h4>
+        <p>Definen los títulos y subtítulos. <code>&lt;h1&gt;</code> es el más importante (título de la página) y <code>&lt;h6&gt;</code> el de menor relevancia.</p>
+        <div class="well well-sm">
+          <strong>Ejemplo:</strong> <code>&lt;h1&gt;Bienvenido a nuestro proyecto&lt;/h1&gt;</code>
+        </div>
+
+        <hr>
+        <h4><strong>&lt;p&gt;</strong></h4>
+        <p>Define un párrafo. Se utiliza para bloques de texto normal.</p>
+        <div class="well well-sm">
+          <strong>Ejemplo:</strong> <code>&lt;p&gt;Este es un párrafo de prueba.&lt;/p&gt;</code>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Enlaces y Multimedia -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>2. Enlaces e Imágenes</strong></h3>
+      </div>
+      <div class="panel-body">
+        <h4><strong>&lt;a&gt;</strong></h4>
+        <p>Crea hipervínculos hacia otras páginas. Usa el atributo <code>href</code> para la dirección.</p>
+        <div class="well well-sm">
+          <strong>Ejemplo:</strong> <code>&lt;a href="index.html"&gt;Volver al inicio&lt;/a&gt;</code>
+        </div>
+
+        <hr>
+        <h4><strong>&lt;img&gt;</strong></h4>
+        <p>Inserta imágenes en la página. Usa <code>src</code> para la ruta de la imagen y <code>alt</code> para un texto alternativo si no carga.</p>
+        <div class="well well-sm">
+          <strong>Ejemplo:</strong> <code>&lt;img src="foto.jpg" alt="Foto descriptiva"&gt;</code>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Listas -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>3. Listas</strong></h3>
+      </div>
+      <div class="panel-body">
+        <h4><strong>&lt;ul&gt;, &lt;ol&gt; y &lt;li&gt;</strong></h4>
+        <p><code>&lt;ul&gt;</code> crea una lista desordenada (puntos), <code>&lt;ol&gt;</code> una lista ordenada (números). <code>&lt;li&gt;</code> define cada elemento dentro de esas listas.</p>
+        <div class="well well-sm">
+          <strong>Ejemplo:</strong><br>
+          <code>&lt;ul&gt;</code><br>
+          <code>&nbsp;&nbsp;&lt;li&gt;Primer elemento&lt;/li&gt;</code><br>
+          <code>&nbsp;&nbsp;&lt;li&gt;Segundo elemento&lt;/li&gt;</code><br>
+          <code>&lt;/ul&gt;</code>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Contenedores -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>4. Contenedores (Agrupación)</strong></h3>
+      </div>
+      <div class="panel-body">
+        <h4><strong>&lt;div&gt;</strong></h4>
+        <p>Es un contenedor de bloque. No tiene diseño propio, sirve para agrupar otros elementos y aplicarles estilos CSS (como los <code>&lt;div class="container"&gt;</code> de Bootstrap).</p>
+
+        <hr>
+        <h4><strong>&lt;span&gt;</strong></h4>
+        <p>Es un contenedor en línea. Permite aplicar estilos a una parte pequeña de un texto sin romper el párrafo.</p>
+        <div class="well well-sm">
+          <strong>Ejemplo:</strong> <code>&lt;p&gt;Texto normal y &lt;span style="color: red;"&gt;texto rojo&lt;/span&gt;.&lt;/p&gt;</code>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. Tablas -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>5. Tablas</strong></h3>
+      </div>
+      <div class="panel-body">
+        <h4><strong>&lt;table&gt;</strong></h4>
+        <p>Define una tabla para mostrar datos estructurados en filas y columnas.</p>
+        <div class="well well-sm">
+          <strong>Ejemplo básico:</strong><br>
+          <code>&lt;table&gt;</code><br>
+          <code>&nbsp;&nbsp;&lt;tr&gt; &lt;td&gt;Celda 1&lt;/td&gt; &lt;td&gt;Celda 2&lt;/td&gt; &lt;/tr&gt;</code><br>
+          <code>&lt;/table&gt;</code>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. Formularios -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>6. Formularios y Captura de Datos</strong></h3>
+      </div>
+      <div class="panel-body">
+        <h4><strong>&lt;form&gt;, &lt;label&gt;, &lt;input&gt; y &lt;button&gt;</strong></h4>
+        <p><code>&lt;form&gt;</code> envuelve todo el formulario. <code>&lt;label&gt;</code> es el texto descriptivo del campo. <code>&lt;input&gt;</code> es la caja de texto donde el usuario escribe y <code>&lt;button&gt;</code> es el botón para enviarlo.</p>
+        <div class="well well-sm">
+          <strong>Ejemplo:</strong><br>
+          <code>&lt;form&gt;</code><br>
+          <code>&nbsp;&nbsp;&lt;label&gt;Nombre:&lt;/label&gt;</code><br>
+          <code>&nbsp;&nbsp;&lt;input type="text" placeholder="Ingresa tu nombre"&gt;</code><br>
+          <code>&nbsp;&nbsp;&lt;button type="submit"&gt;Enviar&lt;/button&gt;</code><br>
+          <code>&lt;/form&gt;</code>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- /container -->
+
+  <!-- Scripts de Bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
