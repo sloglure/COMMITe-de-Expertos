@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HTML Común - Nombre del Equipo</title>
+
+  <!-- Bootstrap 3 desde CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <!-- Nuestros propios estilos -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ===================== NAV BAR ===================== -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-principal"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Nombre del Equipo</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="menu-principal">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="integrantes.html">Miembros</a></li>
+          <li><a href="Reflexiones.html">Reflexiones</a></li>
+          <li class="dropdown active">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false">Investigacion <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="diseno.html">Diseño web</a></li>
+              <li><a href="seo.html">SEO</a></li>
+              <li><a href="hosting.html">Hosting</a></li>
+              <li class="active"><a href="html-comun.html">HTML común</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container seccion">
+    <div class="text-center" style="margin-bottom: 30px;">
+      <h1><strong>Principales comandos Docker</strong></h1>
+      <p class="lead">Explicación y ejemplos de los principales comandos usados en Docker.</p>
+      <hr>
+    </div>
+
+<div class="panel panel-default"> 
+  <div class="panel-heading"> 
+    <h3 class="panel-title"><strong>1. Consultar la versión de Docker</strong></h3> 
+  </div> 
+  <div class="panel-body"> 
+    <h4><strong>docker --version</strong></h4> 
+    <p>Muestra la versión de Docker instalada actualmente en el equipo. Es útil para comprobar que Docker está instalado correctamente y conocer qué versión se está utilizando.</p> 
+    <div class="well well-sm"> 
+      <strong>Ejemplo:</strong> <code>
+docker --version
+Docker version 28.3.3.</code> 
+    </div> 
+  </div> 
+</div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>2. Ejecutar un contenedor de prueba</strong></h3>
+      </div>
+      <div class="panel-body">
+        <h4><strong>docker run hello-worldt;</strong></h4>
+
+        <div class="well well-sm">
+          <strong>Ejemplo:</strong> <code>docker run hello-worldt;</code>          <p>Docker descargará la imagen si no está disponible localmente y ejecutará un contenedor que mostrará un mensaje indicando que la instalación funciona correctamente.</p>
+        </div>
+
+        <hr>
+        <h4><strong>&lt;img&gt;</strong></h4>
+        <p>Inserta imágenes en la página. Usa <code>src</code> para la ruta de la imagen y <code>alt</code> para un texto alternativo si no carga.</p>
+        <div class="well well-sm">
+          <strong>Ejemplo:</strong> <code>&lt;img src="foto.jpg" alt="Foto descriptiva"&gt;</code>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>3. Listar imágenes</strong></h3>
+      </div>
+      <div class="panel-body">
+        <h4><strong>docker images</strong></h4>
+        <p>Muestra las imágenes de Docker almacenadas localmente en el equipo.</p>
+        <div class="well well-sm">
+          <strong>Ejemplo:</strong>
+          <code>docker images</code><br>
+          <p>El comando mostrará información como el nombre de la imagen, su etiqueta, ID, fecha de creación y tamaño.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>4. Mostrar contenedores en ejecución</strong></h3>
+      </div>
+      <div class="panel-body">
+        <h4><strong>docker ps;</strong></h4>
+        <p>Muestra los contenedores que se encuentran actualmente en ejecución.</p>
+        <div class="well well-sm">
+          <strong>Ejemplo:</strong>
+          <code>docker ps</code>
+          <p>La terminal mostrará los contenedores activos junto con información como su ID, imagen utilizada, puertos y nombre.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>5. Mostrar todos los contenedores</strong></h3>
+      </div>
+      <div class="panel-body">
+        <h4><strong>docker ps -a</strong></h4>
+        <p>Muestra todos los contenedores existentes, incluyendo los que están detenidos.</p>
+        <div class="well well-sm">
+          <strong>Ejemplo:</strong>
+          <code>docker ps -a</code>
+          <p>Permite revisar contenedores que fueron ejecutados anteriormente pero que actualmente no están funcionando.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>6. Construir una imagen</strong></h3>
+      </div>
+      <div class="panel-body">
+        <h4><strong>docker build</strong></h4>
+        <p>Construye una imagen a partir de las instrucciones definidas en un archivo Dockerfile.</p>
+        <div class="well well-sm">
+          <strong>Ejemplo:</strong><br>
+          <code>docker build -t mi-web-html .</code>
+          <p>Docker leerá el Dockerfile de la carpeta actual y creará una imagen llamada mi-web-html, que posteriormente podrá utilizarse para crear un contenedor.</p>
+        </div>
+      </div>
+    </div>
+    
+    
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><strong>7. Crear y ejecutar un contenedor</strong></h3>
+  </div>
+  <div class="panel-body">
+    <h4><strong>docker run</strong></h4>
+    <p>Crea y ejecuta un contenedor utilizando una imagen existente.</p>
+    <div class="well well-sm">
+      <strong>Ejemplo:</strong><br>
+      <code>docker run -d -p 8080:80 --name mi-web-container mi-web-html</code>
+      <p>En nuestro proyecto, este comando ejecuta el sitio web dentro de un contenedor y permite acceder a él desde el navegador mediante http://localhost:8080.</p>
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><strong>8. Detener un contenedor</strong></h3>
+  </div>
+  <div class="panel-body">
+    <h4><strong>docker stop</strong></h4>
+    <p>Detiene un contenedor que se encuentra actualmente en ejecución.</p>
+    <div class="well well-sm">
+      <strong>Ejemplo:</strong><br>
+      <code>docker stop mi-web-container</code>
+      <p>El contenedor dejará de ejecutarse, pero seguirá existiendo y podrá iniciarse nuevamente posteriormente.</p>
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><strong>9. Iniciar un contenedor</strong></h3>
+  </div>
+  <div class="panel-body">
+    <h4><strong>docker start</strong></h4>
+    <p>Inicia nuevamente un contenedor que se encontraba detenido.</p>
+    <div class="well well-sm">
+      <strong>Ejemplo:</strong><br>
+      <code>docker start mi-web-container</code>
+      <p>El contenedor volverá a ejecutarse sin necesidad de crearlo nuevamente.</p>
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><strong>10. Eliminar un contenedor</strong></h3>
+  </div>
+  <div class="panel-body">
+    <h4><strong>docker rm</strong></h4>
+    <p>Elimina un contenedor de Docker.</p>
+    <div class="well well-sm">
+      <strong>Ejemplo:</strong><br>
+      <code>docker rm mi-web-container</code>
+      <p>El contenedor será eliminado y dejará de aparecer en la lista de contenedores existentes.</p>
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><strong>11. Eliminar una imagen</strong></h3>
+  </div>
+  <div class="panel-body">
+    <h4><strong>docker rmi</strong></h4>
+    <p>Elimina una imagen almacenada localmente.</p>
+    <div class="well well-sm">
+      <strong>Ejemplo:</strong><br>
+      <code>docker rmi mi-web-html</code>
+      <p>La imagen mi-web-html será eliminada del equipo, siempre que no existan contenedores que dependan de ella.</p>
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><strong>12. Consultar los registros</strong></h3>
+  </div>
+  <div class="panel-body">
+    <h4><strong>docker logs</strong></h4>
+    <p>Permite consultar los mensajes y registros generados por un contenedor.</p>
+    <div class="well well-sm">
+      <strong>Ejemplo:</strong><br>
+      <code>docker logs mi-web-container</code>
+      <p>La terminal mostrará información registrada por el contenedor, lo que resulta útil para detectar errores o revisar su funcionamiento.</p>
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><strong>13. Ejecutar comandos dentro de un contenedor</strong></h3>
+  </div>
+  <div class="panel-body">
+    <h4><strong>docker exec</strong></h4>
+    <p>Permite ejecutar comandos dentro de un contenedor que se encuentra actualmente en ejecución.</p>
+    <div class="well well-sm">
+      <strong>Ejemplo:</strong><br>
+      <code>docker exec -it mi-web-container sh</code>
+      <p>Este comando abre una consola dentro del contenedor, permitiendo revisar o manipular elementos de su entorno.</p>
+    </div>
+  </div>
+</div>
+
+  </div> <!-- /container -->
+
+  <!-- Scripts de Bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
