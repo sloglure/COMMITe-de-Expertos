@@ -1,0 +1,607 @@
+/* ===== Estilos generales (compartidos por todo el sitio) ===== */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #e8f5e9;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+.head {
+  font-family: "Inter";
+}
+
+.body {
+  font-family: "Inter";
+}
+
+h1 {
+  margin-bottom: 40px;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* ============================================================
+   SECCIÓN: PÁGINA PRINCIPAL (index.html)
+   ============================================================ */
+
+.seccion {
+  padding: 40px 20px;
+}
+
+.seccion h2 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.texto-descripcion {
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 120px;
+  margin: 20px 0;
+}
+
+.foto-equipo {
+  width: 100%;
+  max-width: 500px;
+  border: 3px solid #000000;
+  margin: 20px 0;
+}
+
+.tecnologias {
+  margin-top: 20px;
+}
+
+.tecnologias p {
+  font-weight: bold;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 15px 5px;
+}
+
+.enlaces-destacados {
+  margin: 30px 0 50px 0;
+}
+
+.enlaces-destacados .btn {
+  margin: 5px;
+}
+
+.panel {
+  min-height: 140px;
+}
+
+/* Fila con tarjetas de igual altura (Quiénes somos / Misión / Fortalezas) */
+.fila-igual-alto {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.panel-fortaleza {
+  height: 100%;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.panel-fortaleza h2 {
+  text-align: left;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #1b5e20;
+}
+
+.panel-fortaleza p {
+  text-align: justify;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Etiquetas de Tecnologías */
+.tech-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.tech-tag {
+  background-color: #ffffff;
+  color: #1b5e20;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  min-width: 100px;
+}
+
+.tag {
+  background-color: #ffffff;
+  color: #1b5e20;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  min-width: 100px;
+}
+
+.cont {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+/* ============================================================
+   SECCIÓN: PÁGINA DE INTEGRANTES (integrantes.html + perfiles)
+   ============================================================ */
+
+/* Contenedor de los botones del equipo */
+.equipo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+/* Cada botón es un enlace que envuelve una imagen y un nombre */
+.miembro {
+  text-decoration: none;
+  color: #333333;
+  width: 120px;
+}
+
+.miembro img {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  border: 3px solid #000000;
+  background-color: #f2f2f2;
+}
+
+.miembro:hover img {
+  transform: scale(1.05);
+  background-color: #e6e6e6;
+}
+
+.miembro p {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+/* Página de perfil individual */
+.perfil {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.perfil img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid #000000;
+  background-color: #f2f2f2;
+}
+
+.volver {
+  display: block;
+  width: fit-content;
+  margin: 60px auto 40px auto;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #1b5e20;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.volver:hover {
+  background-color: #555555;
+}
+
+/* ======== página user 1 (Jesus Poturo) ======== */
+
+.panel-tecnologias,
+.panel-lenguajes,
+.panel-intereses {
+  width: 260px;
+  height: 260px;
+  border-radius: 15px;
+  overflow: hidden;
+  border-color: #1b5e20;
+}
+
+.panel-tecnologias:hover,
+.panel-lenguajes:hover,
+.panel-intereses:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.panel-tecnologias .panel-heading,
+.panel-lenguajes .panel-heading,
+.panel-intereses .panel-heading {
+  background-color: #1b5e20;
+  color: #ffffff;
+  font-size: 18px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.panel-tecnologias .panel-body,
+.panel-lenguajes .panel-body,
+.panel-intereses .panel-body {
+  text-align: left;
+  padding: 20px;
+}
+
+.fila-centrada {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 25px;
+}
+
+.foto-perfil-individual {
+  margin-top: 20px;
+}
+
+.texto-descripcion-perfil {
+  margin-top: 10px;
+  font-size: 16px;
+  justify-content: center;
+}
+
+.texto-rol {
+  font-size: 25px;
+}
+
+.portafolio a {
+  display: block;
+  width: fit-content;
+  margin: 60px auto 40px auto;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #1b5e20;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* ===== Tarjetas de proyectos del portafolio ===== */
+
+.panel-proyecto {
+  width: 320px;
+  min-height: 260px;
+  border-radius: 15px;
+  overflow: hidden;
+  border-color: #1b5e20;
+}
+
+.panel-proyecto:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.panel-proyecto .panel-heading {
+  background-color: #1b5e20;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.panel-proyecto .panel-body {
+  text-align: left;
+  padding: 20px;
+}
+
+.panel-proyecto p {
+  margin-bottom: 12px;
+}
+
+.panel-proyecto p {
+  margin-bottom: 0;
+}
+
+.label-success {
+  background-color: #66bb6a;
+}
+
+/* ============================================================
+   NAV BAR BOOTSTRAP (COLORES PERSONALIZADOS)
+   ============================================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  margin: 0;
+  border-radius: 0;
+  border: none;
+}
+
+.navbar-default {
+  background-color: #1b5e20;
+  border-color: #1b5e20;
+}
+
+.navbar-default .navbar-brand {
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ffffff;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+  color: #ffffff;
+  background-color: #66bb6a;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+  color: #ffffff;
+  background-color: #66bb6a;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+  color: #ffffff;
+  background-color: #66bb6a;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #ffffff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #66bb6a;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+
+.dropdown-menu {
+  background-color: #1b5e20;
+}
+
+.dropdown-menu>li>a {
+  color: #ffffff;
+}
+
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+  background-color: #66bb6a;
+  color: #ffffff;
+}
+
+/* Permitir que el dropdown se abra al pasar el mouse (hover) */
+ul.nav li.dropdown:hover>ul.dropdown-menu {
+  display: block;
+}
+/* modificacion logo */
+.logo{
+  height: 500px;
+  width: 50%;
+}
+/* PAGINA DE CONTENIDOS */
+.H1-Docker {
+
+  text-align: center;
+  font-size: 70px;
+  color: #1B5E20;
+  margin-top: 40px;
+  margin-bottom:50px;
+}
+
+.estilo-descripcion {
+  text-align: center;
+  font-size: 20px;
+  color: #000000;
+  margin-top: 40px;
+  margin-bottom:50px;
+}
+.img-Docker {
+  height: 300px;
+  width: 80%;
+  background-color: #e8f5e9;
+  border-radius: 25px;
+  padding: 25px;
+  object-fit: contain;
+}
+.img-Docker:hover {
+  transform: scale(1.10);
+  background-color: #A5D6A7;
+}
+.H2-Docker {
+  text-align: center;
+  font-size: 50px;
+  color: #1B5E20;
+  margin-top: 300px;
+  margin-bottom:50px;
+}
+.H3-Docker {
+
+  text-align: center;
+  font-size: 30px;
+  color: #1B5E20;
+  margin-top: 50px;
+  margin-bottom:30px;
+}
+.margen-top{
+  margin-top: 80px;
+  display: flow-root;
+}
+
+.Imagen1 {
+  height: 300px;
+  width: 50%;
+  border-radius: 20px;
+  padding: 10px;
+  object-fit: contain;
+}
+.Imagen2 {
+  height: 300px;
+  width: 50%; 
+  border-radius: 20px;
+  padding: 10px;
+  object-fit: contain;
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+
+
+/* PAGINA DE NGINX */
+.img-Nginx {
+  height: 300px;
+  width: 20%;
+  background-color: #e8f5e9;
+}
+.img-dockerfile {
+  height: 300px;
+  width: 50%;
+  background-color: #e8f5e9;
+}
+.img-docker-build {
+  height: 300px;
+  width: 50%;
+  background-color: #e8f5e9;
+}
+.img-contenedor {
+  height: 100px;
+  width: 50%;
+  background-color: #e8f5e9;
+}
+.img-docker-evidencia {
+  height: 500px;
+  width: 70%;
+  background-color: #e8f5e9;
+}
+.img-web-evidencia {
+  height: 500px;
+  width: 70%;
+  background-color: #e8f5e9;
+}
+.img-powershell-evidencia {
+  height: 300px;
+  width: 80%;
+  background-color: #e8f5e9;
+}
+.Imagengrande {
+  height: 500px;
+  width: 80%;
+  border-radius: 20px;
+  padding: 10px;
+  object-fit: contain;
+}
+
+
+
+
+
+.articulo, div.articulo{
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+.titulo-articulo, h2.titulo-articulo, .H2-Docker.titulo-articulo{
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+.subtitulo-articulo, h3.subtitulo-articulo, .H3-Docker.subtitulo-articulo{
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.parrafo-articulo, p.parrafo-articulo, .estilo-descripcion.parrafo-articulo{
+  text-align: left;
+}
+.lista-comandos{
+  text-align: left;
+  list-style: disc;
+  padding-left: 25px;
+}
+.lista-comandos .comando-descripcion{
+  text-align: left;
+  margin-bottom: 5px;
+}
+.lista-comandos .comando-codigo{
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.bloque-ejemplos{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.imagen-ejemplo{
+  display: block;
+  margin: 15px auto 0 auto;
+}
+.enlace-referencia{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.enlace-imagen{
+  display: block;
+  width: fit-content;
+  margin: 20px 0
+}
+.enlace-boton{
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 10px 24px;
+  background-color: #1b5e20;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+.enlace-boton:hover,
+.enlace-boton:focus{
+  background-color: #66bb6a;
+  color: #ffffff;
+  text-decoration: none;
+ 
+}
+.imagen-ejemplo{
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+}
+.Imagen1,
+.Imagen2{
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+}
