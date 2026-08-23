@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ximena lovers</title>
+
+  <!-- Bootstrap 3 desde CDN, no hay que instalar nada -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <!-- Nuestros propios estilos, van despues de Bootstrap para poder sobreescribirlo -->
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+
+<body>
+  
+  <!-- ===================== NAV BAR ===================== -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-principal"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Ximena Lovers</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="menu-principal">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Inicio</a></li>
+          <li><a href="integrantes.html">Miembros</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false">Investigacion <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="pagina-contenidos.html">Contenidos</a></li>
+              <li><a href="pagina-Docker.html">Docker</a></li>
+              <li><a href="pagina-Nginx.html">Nginx</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== CONTENIDO PRINCIPAL ===================== -->
+  <div class="container text-center seccion">
+    <!-- Logo -->
+    <img class="logo" src="imagenes/ximena lovers logo.png" alt="Logo Ximena Lovers" class="logo" />
+
+    <h1><strong>Nuestro Equipo</strong></h1>
+
+    <!-- Quiénes somos / Nuestra misión -->
+    <div class="row fila-igual-alto">
+      <div class="col-sm-6">
+        <div class="panel panel-default panel-fortaleza">
+          <div class="panel-body">
+            <h2><strong>¿Quiénes somos?</strong></h2>
+            <p>
+              Somos un equipo de desarrollo web formado por estudiantes de la
+              Universidad Autónoma de Chile, apasionados por el desarrollo de
+              software y superarnos cada día.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="panel panel-default panel-fortaleza">
+          <div class="panel-body">
+            <h2><strong>Nuestra misión</strong></h2>
+            <p>
+              Nuestra misión es aprobar de manera satisfactoria el ramo de
+              desarrollo web y obtener una buena nota en el proyecto final,
+              además de aprender a trabajar en equipo y mejorar nuestras
+              habilidades de desarrollo web.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fortalezas -->
+    <h2><strong>Fortalezas</strong></h2>
+    <div class="row fila-igual-alto">
+      <div class="col-sm-4">
+        <div class="panel panel-default panel-fortaleza">
+          <div class="panel-body">
+            <strong>Trabajo en equipo</strong>
+            <p>nashe</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="panel panel-default panel-fortaleza">
+          <div class="panel-body">
+            <strong>Habilidades técnicas</strong>
+            <p>0</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="panel panel-default panel-fortaleza">
+          <div class="panel-body">
+            <strong>Compromiso</strong>
+            <p>
+              Responsabilidad y organización para cumplir plazos y objetivos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Imagen del equipo juntos -->
+    <h2><strong>El equipo</strong></h2>
+    <img src="imagenes/equipo.jpg" alt="Foto del equipo completo" class="foto-equipo" />
+
+    <!-- Tecnologías usadas -->
+    <section class="seccion text-center">
+      <h2><strong>Tecnologías que usamos</strong></h2>
+      <div class="tech-container">
+        <div class="tech-tag">HTML</div>
+        <div class="tech-tag">CSS</div>
+        <div class="tech-tag">Bootstrap</div>
+        <div class="tech-tag">Docker</div>
+        <div class="tech-tag">Nginx</div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Scripts de Bootstrap, van al final para no retrasar la carga de la pagina -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

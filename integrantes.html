@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nuestro Equipo</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <!-- ===================== NAV BAR ===================== -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#menu-principal"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Ximena Lovers</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="menu-principal">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Inicio</a></li>
+            <li><a href="integrantes.html">Miembros</a></li>
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Investigacion <span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="pagina-contenidos.html">Contenidos</a></li>
+                <li><a href="pagina-Docker.html">Docker</a></li>
+                <li><a href="pagina-Nginx.html">Nginx</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h1>Ximena Lovers</h1>
+
+    <!-- Cada miembro es un enlace <a> que envuelve la imagen, por eso funciona como botón -->
+    <div class="equipo">
+      <a href="usuarios/user1.html" class="miembro">
+        <img src="imagenes/user1.png" alt="Foto de User 1" />
+        <p>Jesus Poturo</p>
+      </a>
+
+      <a href="usuarios/user2.html" class="miembro">
+        <img src="imagenes/cata.png" alt="Foto de User 2" />
+        <p>Catalina Hernandez</p>
+      </a>
+
+      <a href="usuarios/user3.html" class="miembro">
+        <img src="imagenes/user3.jpg" alt="Foto de User 3" />
+        <p>Jesus Rodriguez</p>
+      </a>
+
+      <a href="usuarios/user4.html" class="miembro">
+        <img src="imagenes/user3.jpg" alt="Foto de User 3" />
+        <p>Benjamin Mardones</p>
+      </a>
+
+      <a href="usuarios/user5.html" class="miembro">
+        <img src="imagenes/user3.jpg" alt="Foto de User 3" />
+        <p>Ignacio Ampuero</p>
+      </a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
+<footer>
+
+</footer>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nginx</title>
+
+    <!-- Bootstrap 3 desde CDN -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <!-- hoja de estilo-->
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#menu-principal"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Ximena Lovers</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="menu-principal">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html">Inicio</a></li>
+              <li><a href="integrantes.html">Miembros</a></li>
+              <li class="dropdown">
+                <a
+                  href="#"
+                  class="dropdown-toggle"
+                  data-toggle="dropdown"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Investigacion <span class="caret"></span
+                ></a>
+                <ul class="dropdown-menu">
+                  <li><a href="pagina-contenidos.html">Contenidos</a></li>
+                  <li><a href="pagina-Docker.html">Docker</a></li>
+                  <li><a href="pagina-Nginx.html">Nginx</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="grillas">
+        <div class="container text-center">
+          <div class="row fila-igual-alto">
+            <div class="col-md-12">
+              <h1 class="H1-Docker">
+                <strong>Contenidos e Investigación</strong>
+              </h1>
+
+              <div class="margen-top articulo">
+                <h2 class="H2-Docker titulo-articulo">
+                  <strong>Docker</strong>
+                </h2>
+                <p class="etilo-descripcion parrafo-articulo">
+                  Dcocker es un sistema de software TI que es utilizado para
+                  organizar "contenedores", estas se pueden utilizar como
+                  maquinas virtuales muy livianas y modulares. Con Docker se
+                  obtiene la felxibilidad necesaria para crearlos,
+                  implementarlos, copiarlos y trasladarlos de un entorno a otro,
+                  esto permite optimizar las aplicaciones para la nube.
+                </p>
+
+                <a
+                  href="https://www.docker.com/"
+                  class="enlace docker enlace-imagen"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img
+                    class="img-fluid img-Docker"
+                    src="imagenes/Docker.png"
+                    alt="pagina oficial Docker"
+                  />
+                </a>
+
+                <div class="margen-top articulo">
+                  <h3 class="H3-Docker subtitulo-articulo">
+                    <strong>Ejemplos Docker</strong>
+                  </h3>
+                  <img
+                    class="Imagen1"
+                    src="imagenes/docker-equipo.png"
+                    alt="ejemplo docker 1"
+                  />
+                  <img
+                    class="Imagen2"
+                    src="imagenes/iphost.png"
+                    alt="ejemplo docker 2 "
+                  />
+                  <p class="estilo-descripcion parrafo-articulo">
+                    Estos ejemplos muestran cómo Docker fue utilizado para
+                    empaquetar la aplicación con el servidor Nginx y archivos
+                    web en un contenedor independiente. Garantizando que el
+                    sitio web funcione exactamente igual en todos los equipos,
+                    eliminando problemas de compatibilidad.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Aquí empieza la sección de los comandos de Docker-->
+
+      <section id="comandos-docker" class="seccion">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="H2-Docker titulo-articulo articulo">
+                <strong>Comandos Docker</strong>
+              </h2>
+
+              <div class="margen-top articulo">
+                <p class="estilo-descripcion parrafo-articulo">
+                  Son las instrucciones que se ejecutan desde la línea de
+                  comandos para interactuar con el motor de Docker. Permiten
+                  crear, administrar y controlar el ciclo de vida de
+                  contenedores, imágenes, redes y volúmenes de manera eficiente
+                </p>
+
+                <div class="bloque-ejemplos">
+                  <h3 class="titulo-ejemplos">Ejemplos</h3>
+                  <ul class="lista-comandos">
+                    <li class="item-comando">
+                      <p class="comando-descripcion">
+                        Para descargar y ejecutar Docker en segundo plano
+                      </p>
+                      <code class="comando-codigo"
+                        >docker run -d -p 8080:80 --name mi-servidor-
+                        nginx</code
+                      >
+                    </li>
+
+                    <li class="item-comando">
+                      <p class="comando-descripcion">
+                        Para ver la lista de contenedores que se están
+                        ejecutando actualmente
+                      </p>
+                      <code class="comando-codigo">docker ps</code>
+                    </li>
+
+                    <li class="item-comando">
+                      <p class="comando-descripcion">
+                        Para entrar a la consola interactiva del contenedor
+                        Nginx que se acaba de crear
+                      </p>
+                      <code class="comando-codigo"
+                        >docker exec -it mi-servidor bash</code
+                      >
+                    </li>
+
+                    <li class="item-comando">
+                      <p class="comando-descripcion">
+                        Para contruir una imagen propia basada en un Dockerfile
+                        ubicado en la carpeta actual
+                      </p>
+                      <code class="comando-codigo"
+                        >docker build -t mi-aplicacion:1.0</code
+                      >
+                    </li>
+
+                    <li class="item-comando">
+                      <p class="comando-descripcion">
+                        Para detener y eliminar el contenedor que creamos
+                      </p>
+                      <code class="comando-codigo"
+                        >docker stop mi-servidor</code
+                      >
+                      <code class="comando-codigo">docker rm mi-servidor</code>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="enlare-referencia">
+                  <a
+                    href="https://docs.docker.com/reference/cli/docker/"
+                    target="_blank"
+                    rel="noopener" class="enlace-boton"
+                    >https://docs.docker.com/reference/cli/docker/</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Aquí termina la sección de los comandos de Docker-->
+
+      <!--Aquí empieza la sección del CSS-->
+      <section id="css-seccion" class="seccion">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="H2-Docker titulo-articulo articulo">
+                <strong>CSS (Cascading Style Sheet)</strong>
+              </h2>
+              <div class="margen-top articulo">
+                <p class="estilo-descripcion parrafo-articulo">
+                  CSS es el lenguaje de hojas de estilo utilizado para definir
+                  la apariencia, el diseño y la presentación del documento
+                  escrito en HTML. Permite controlar colores, fuentes,
+                  alineaciones y layouts adaptables (responsive)
+                </p>
+
+                 <div class="bloque-ejemplos">
+                  <h3 class="H3-Docker subtitulo-articulo">Ejemplos</h3>
+                  <img
+                    class="img-responsive imagen-ejemplo"
+                    src="imagenes/clase-css.png"
+                    alt="Ejemlpo de uso de CSS"
+                  />
+                </div>
+
+                <div class="enlace-referencia">
+                  <a
+                    href="https://www.w3schools.com/css/"
+                    target="_blank"
+                    rel="noopener" class="enlace-boton"
+                    >https://www.w3schools.com/css/</a
+                  >
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Aquí termina la sección del CSS-->
+
+      <!--Aquí empieza la sección del Bootstrap-->
+      <section id="bootstrap-seccion" class="seccion">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="H2-Docker titulo-articulo articulo">
+                <strong>Bootstrap</strong>
+              </h2>
+              <div class="margen-top articulo">
+                <p class="estilo-descripcion parrafo-articulo">
+                  Bootstrap es un framework de código aierto de HTML, CSS Y
+                  JavaScript ampliamente utilizado para el desarrollo web de
+                  sitios adaptables (responsive) y priorizados para dispositivos
+                  móviles. Incluye componentes precalculados y un sistema de
+                  rejillas (Grid) para agilizar el maqueteado.
+                </p>
+
+               <div class="bloque-ejemplos">
+                  <h3 class="H3-Docker subtitulo-articulo">Ejemplos</h3>
+                  <img
+                    class="img-responsive imagen-ejemplo"
+                    src="imagenes/ejemplo-bootstrap.png"
+                    alt="Ejemlpo de uso de Bootstrap"
+                  />
+                </div>
+
+                <div class="enlace-referencia">
+                  <a
+                    href="https://getbootstrap.com/"
+                    target="_blank"
+                    rel="noopener" class="enlace-boton"
+                    >https://getbootstrap.com/</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Aquí termina la sección de Bootstrap-->
+
+      <!--Aquí empieza la sección de Etiquetas semanticas de HTML-->
+
+      <section id="etiquetas-semanticas" class="seccion">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="H2-Docker titulo-articulo articulo">
+                <strong>Etiquetas semanticas del HTML</strong>
+              </h2>
+              <div class="margen-top articulo">
+                <p class="estilo-descripcion parrafo-articulo">
+                  Son las etiquetas fundamentales utilizadas de manera
+                  recurrente para estructurar el contenido básico de una página
+                  web, como encabezados, párrafos, enlaces, imágenes y listas.
+                </p>
+
+                <div class="bloque-ejemplos">
+                  <img class="img-responsive imagen-ejemplo" src="imagenes/ejemplo-semantica-html.png" alt="Ejemplo de etiquetas semánticas HTML"/>
+                </div>
+
+                <div class="enlare-referencia">
+                  <a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank" rel="noopener" class="enlace-boton">https://www.w3schools.com/html/html5_semantic_elements.asp</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nginx</title>
+
+  <!-- Bootstrap 3 desde CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <!-- Hoja de estilo personalizada -->
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-principal"
+            aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Ximena Lovers</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="menu-principal">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="integrantes.html">Miembros</a></li>
+            <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">
+                Investigación <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="pagina-contenidos.html">Contenidos</a></li>
+                <li><a href="pagina-Docker.html">Docker</a></li>
+                <li><a href="pagina-Nginx.html">Nginx</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="nginx-seccion" class="seccion">
+      <div class="container text-center">
+        <div class="row fila-igual-alto">
+          <div class="col-md-12">
+
+            <h1 class="H1-Docker"><strong>Nginx</strong></h1>
+
+            <div class="margen-top articulo">
+              <h2 class="H2-Docker titulo-articulo"><strong>¿Qué es Nginx?</strong></h2>
+              <p class="estilo-descripcion parrafo-articulo">
+                Nginx es un servidor web de código abierto que también funciona como proxy inverso, equilibrador de
+                carga y caché HTTP. Es conocido por su alto rendimiento, estabilidad y bajo consumo de recursos, lo que
+                lo hace ideal para manejar grandes volúmenes de tráfico web.
+              </p>
+
+              <img class="img-fluid Imagen1" src="imagenes/Nginx.png" alt="Logo de Nginx" />
+
+              <h2 class="H2-Docker titulo-articulo"><strong>Uso en el Proyecto</strong></h2>
+              <p class="estilo-descripcion parrafo-articulo">
+                En nuestro proyecto, utilizamos Nginx como servidor web para alojar y servir nuestro sitio web. Por lo
+                que es necesario configurarlo adecuadamente en el archivo "Dockerfile" para asegurar su correcto
+                funcionamiento, copiando todo lo que exista en el código para su implementación en el servidor.
+              </p>
+
+              <img class="img-fluid Imagengrande" src="imagenes/archivo-dockerfile.png"
+                alt="Contenido del archivo Dockerfile" />
+
+              <div class="bloque-ejemplos">
+                <ul class="lista-comandos">
+                  <li class="item-comando">
+                    <p class="comando-descripcion">Permite usar la imagen oficial de Nginx como servidor web:</p>
+                    <code class="comando-codigo">FROM nginx:alpine</code>
+                  </li>
+                  <li class="item-comando">
+                    <p class="comando-descripcion">Para copiar las páginas al directorio que Nginx sirve por defecto:
+                    </p>
+                    <code class="comando-codigo">COPY . /usr/share/nginx/html/</code>
+                  </li>
+                </ul>
+              </div>
+
+              <h2 class="H2-Docker titulo-articulo"><strong>Comando utilizado para construir la imagen</strong></h2>
+              <img class="img-fluid Imagengrande" src="imagenes/docker-build.png" alt="Comando docker build" />
+
+              <div class="bloque-ejemplos">
+                <ul class="lista-comandos">
+                  <li class="item-comando">
+                    <p class="comando-descripcion"><strong>docker build:</strong> Procesa el código del Dockerfile para
+                      empaquetar el servidor y el código.</p>
+                  </li>
+                  <li class="item-comando">
+                    <p class="comando-descripcion"><strong>-t (mi-sitio-web):</strong> Sirve para asignar un nombre a la
+                      imagen construida.</p>
+                  </li>
+                  <li class="item-comando">
+                    <p class="comando-descripcion"><strong>. :</strong> Le indica a Docker que busque el archivo
+                      Dockerfile en el directorio actual.</p>
+                  </li>
+                </ul>
+              </div>
+
+              <h2 class="H2-Docker titulo-articulo"><strong>Comando utilizado para ejecutar el contenedor</strong></h2>
+              <img class="img-fluid Imagengrande" src="imagenes/contenedor-nombre.png" alt="Comando para crear contenedor" />
+
+              <div class="bloque-ejemplos">
+                <ul class="lista-comandos">
+                  <li class="item-comando">
+                    <p class="comando-descripcion">Ejecución en segundo plano y asignación de nombre:</p>
+                    <code class="comando-codigo">docker run -d -p 8080:80 --name contenedor-lovers mi-sitio-web</code>
+                  </li>
+                </ul>
+              </div>
+
+              <h2 class="H2-Docker titulo-articulo"><strong>Mapeo de Puertos</strong></h2>
+              <p class="estilo-descripcion parrafo-articulo">
+                El mapeo de puertos permite que las aplicaciones ejecutadas en un contenedor sean accesibles desde el
+                exterior. El parámetro <strong>"-p 8080:80"</strong> conecta el puerto 8080 de la máquina anfitriona con
+                el puerto 80 interno del contenedor. Cuando se abre <code>http://localhost:8080</code>, Docker redirige
+                la solicitud directamente al servidor Nginx.
+              </p>
+
+              <h2 class="H2-Docker titulo-articulo"><strong>Evidencias de Funcionamiento</strong></h2>
+
+              <h3 class="H3-Docker subtitulo-articulo">Sitio funcionando en http://localhost:8080</h3>
+              <img class="img-fluid Imagengrande" src="imagenes/docker-equipo.png" alt="Evidencia de sitio funcionando" />
+
+              <h3 class="H3-Docker subtitulo-articulo">Evidencia de sitio web funcional</h3>
+              <img class="img-fluid Imagengrande" src="imagenes/iphost.png" alt="Evidencia de sitio web funcional" />
+
+              <h3 class="H3-Docker subtitulo-articulo">PowerShell con contenedor en ejecución</h3>
+              <img class="img-fluid Imagengrande" src="imagenes/contenedor-ejecucion.png" alt="Evidencia de PowerShell" />
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
