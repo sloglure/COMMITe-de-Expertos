@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Etiquetas Semánticas de HTML</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <style>
+      .texto-justificado {
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- ===================== NAV BAR ===================== -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#menu-principal"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Ximena Lovers</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="menu-principal">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="integrantes.html">Miembros</a></li>
+              <li class="dropdown active">
+                <a
+                  href="#"
+                  class="dropdown-toggle"
+                  data-toggle="dropdown"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Investigacion <span class="caret"></span
+                ></a>
+                <ul class="dropdown-menu">
+                  <li><a href="contenidos.html">Contenidos</a></li>
+                  <li><a href="pagina-Docker.html">Pagina Docker</a></li>
+                  <li><a href="docker-comandos.html">Docker Comandos</a></li>
+                  <li><a href="Nginx.html">Nginx</a></li>
+                  <li><a href="css.html">CSS</a></li>
+                  <li><a href="html-comun.html">HTML Comun</a></li>
+                  <li><a href="etiquetas-semanticas.html">Etiquetas Semanticas</a></li>
+                  <li><a href="bootstrap.html">Bootstrap</a></li>
+                  <li><a href="reflexiones.html">Reflexiones</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container seccion">
+        <h1>Etiquetas Semánticas de HTML</h1>
+
+        <div class="texto-descripcion texto-justificado">
+
+          <section id="proposito">
+            <h2>Propósito de la investigación</h2>
+            <p>
+              La presente investigación tiene como propósito comprender qué son las etiquetas
+              semánticas de HTML, por qué resultan fundamentales para la accesibilidad, el
+              posicionamiento en buscadores y el mantenimiento del código, y cómo aplicarlas
+              correctamente en la construcción de este sitio, documentando para cada etiqueta
+              estructural su propósito, un ejemplo de código y el lugar concreto de nuestro propio
+              proyecto donde fue empleada.
+            </p>
+          </section>
+
+          <section id="definicion">
+            <h2>Definición y diferencia con las etiquetas no semánticas</h2>
+            <p>
+              Las etiquetas semánticas son aquellas que describen el significado del contenido que
+              encierran en lugar de limitarse a definir su apariencia visual, brindando a los
+              navegadores y a los motores de búsqueda información valiosa sobre la estructura y la
+              intención de cada bloque, lo que favorece la accesibilidad y la optimización para
+              buscadores, también conocida como SEO; frente a ellas, las etiquetas no semánticas como
+              div y span solo agrupan contenido sin declarar su función, mientras que etiquetas como
+              header, article o footer comunican claramente el papel de cada porción de la página.
+            </p>
+<pre><code>&lt;div class="header"&gt;Bienvenido&lt;/div&gt;
+
+&lt;header&gt;
+  &lt;h1&gt;Bienvenido&lt;/h1&gt;
+&lt;/header&gt;</code></pre>
+          </section>
+
+          <section id="beneficios">
+            <h2>Beneficios de utilizar etiquetas semánticas</h2>
+            <p>
+              El empleo de etiquetas semánticas reporta tres beneficios principales: mejora la
+              accesibilidad, pues los lectores de pantalla interpretan con mayor precisión el
+              contenido para usuarios con discapacidades, favorece el posicionamiento en buscadores,
+              ya que los motores comprenden mejor la jerarquía y el tema de cada página, y facilita el
+              mantenimiento, porque un código legible permite a cualquier integrante del equipo
+              entender rápidamente la estructura y el propósito de cada sección.
+            </p>
+          </section>
+
+          <section id="evolucion">
+            <h2>Evolución de la semántica en HTML</h2>
+            <p>
+              La semántica en HTML no siempre existió; en las primeras versiones la maquetación se
+              resolvía con tablas, que organizaban el contenido en filas y columnas pero aportaban
+              escasa información sobre su significado, complicaban el mantenimiento y confundían a los
+              lectores de pantalla, y más tarde se popularizó el denominado div soup, una práctica
+              consistente en anidar numerosos contenedores genéricos para lograr la apariencia
+              deseada, con las mismas carencias de significado, legibilidad y accesibilidad; recién
+              con la llegada de HTML5 se incorporaron etiquetas estructurales propias, como header,
+              nav, main, section, article, aside y footer, que permiten describir el propósito de cada
+              bloque y construir documentos ordenados, comprensibles y accesibles.
+            </p>
+          </section>
+
+          <section id="etiquetas-estructurales">
+            <h2>Etiquetas semánticas estructurales</h2>
+            <p class="mb-4">
+              Estas siete etiquetas constituyen el esqueleto de una página, cada una con un propósito
+              definido, un ejemplo de código y su uso concreto dentro de nuestro sitio.
+            </p>
+
+            <article class="panel panel-default">
+              <div class="panel-heading"><strong>&lt;header&gt;</strong></div>
+              <div class="panel-body">
+                <p>
+                  El encabezado define la cabecera de un documento o de una sección, albergando
+                  habitualmente la identidad del sitio, el logotipo y la barra de navegación.
+                </p>
+<pre><code>&lt;header&gt;
+  &lt;nav class="navbar navbar-default"&gt;...&lt;/nav&gt;
+&lt;/header&gt;</code></pre>
+                <p>
+                  En nuestro sitio: las páginas de investigación emplean esta etiqueta para envolver
+                  la barra de navegación compartida con todo el equipo.
+                </p>
+              </div>
+            </article>
+
+            <article class="panel panel-default">
+              <div class="panel-heading"><strong>&lt;nav&gt;</strong></div>
+              <div class="panel-body">
+                <p>
+                  La etiqueta nav delimita un conjunto de enlaces de navegación, indicando a los
+                  usuarios y a los buscadores cuáles son los accesos principales del sitio.
+                </p>
+<pre><code>&lt;nav class="navbar navbar-default"&gt;
+  &lt;ul class="nav navbar-nav"&gt;
+    &lt;li&gt;&lt;a href="index.html"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+                <p>
+                  En nuestro sitio: la barra de navegación verde de la plantilla aparece en todas las
+                  páginas, desde la portada hasta los perfiles, los portafolios y las
+                  investigaciones.
+                </p>
+              </div>
+            </article>
+
+            <article class="panel panel-default">
+              <div class="panel-heading"><strong>&lt;main&gt;</strong></div>
+              <div class="panel-body">
+                <p>
+                  La etiqueta main envuelve el contenido principal y único del documento, excluyendo
+                  cabecera, navegación y pie, de modo que los lectores de pantalla pueden saltar
+                  directamente al material esencial.
+                </p>
+<pre><code>&lt;main&gt;
+  &lt;div class="container"&gt;
+    &lt;h1&gt;Bienvenido&lt;/h1&gt;
+  &lt;/div&gt;
+&lt;/main&gt;</code></pre>
+                <p>
+                  En nuestro sitio: las páginas de investigación envuelven todo su contenido con esta
+                  etiqueta.
+                </p>
+              </div>
+            </article>
+
+            <article class="panel panel-default">
+              <div class="panel-heading"><strong>&lt;section&gt;</strong></div>
+              <div class="panel-body">
+                <p>
+                  La etiqueta section agrupa contenido temáticamente relacionado dentro de una página,
+                  dotando de organización a los bloques que comparten un mismo asunto.
+                </p>
+<pre><code>&lt;section id="que-es"&gt;
+  &lt;h2&gt;¿Qué es Bootstrap?&lt;/h2&gt;
+  &lt;p&gt;...&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+                <p>
+                  En nuestro sitio: las páginas de investigación dividen cada tema de estudio con
+                  secciones, y la portada de la plantilla agrupa con ella las tecnologías que utiliza
+                  el equipo.
+                </p>
+              </div>
+            </article>
+
+            <article class="panel panel-default">
+              <div class="panel-heading"><strong>&lt;article&gt;</strong></div>
+              <div class="panel-body">
+                <p>
+                  La etiqueta article representa contenido independiente y autocontenido, comprensible
+                  por sí mismo, como un artículo, una noticia o una entrada, lo que permite
+                  distribuirlo o reutilizarlo sin perder sentido.
+                </p>
+<pre><code>&lt;article class="panel panel-default"&gt;
+  &lt;h3&gt;identity-generator&lt;/h3&gt;
+  &lt;p&gt;CLI de identidades sintéticas.&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+                <p>
+                  En nuestro sitio: las páginas de investigación presentan cada etiqueta documentada
+                  dentro de un article.
+                </p>
+              </div>
+            </article>
+
+            <article class="panel panel-default">
+              <div class="panel-heading"><strong>&lt;aside&gt;</strong></div>
+              <div class="panel-body">
+                <p>
+                  La etiqueta aside contiene información complementaria al contenido principal, como
+                  barras laterales, anuncios o enlaces relacionados, que puede retirarse sin afectar
+                  la comprensión del material central.
+                </p>
+<pre><code>&lt;aside&gt;
+  &lt;h2&gt;Noticias recientes&lt;/h2&gt;
+  &lt;p&gt;Contenido relacionado.&lt;/p&gt;
+&lt;/aside&gt;</code></pre>
+                <p>
+                  En nuestro sitio: aún no se ha empleado, pues perfiles, portafolios e
+                  investigaciones prescinden de contenido lateral, quedando disponible para una futura
+                  sección complementaria.
+                </p>
+              </div>
+            </article>
+
+            <article class="panel panel-default">
+              <div class="panel-heading"><strong>&lt;footer&gt;</strong></div>
+              <div class="panel-body">
+                <p>
+                  La etiqueta footer define el pie de un documento o de una sección, reservado
+                  habitualmente para la autoría, los derechos, los enlaces secundarios o los créditos
+                  del sitio.
+                </p>
+<pre><code>&lt;footer class="seccion"&gt;
+  &lt;p&gt;COMMITe de Expertos&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+                <p>
+                  En nuestro sitio: las páginas de investigación cierran con esta etiqueta, que aloja
+                  el nombre del equipo.
+                </p>
+              </div>
+            </article>
+
+          </section>
+
+          <section id="contenido-texto">
+            <h2>Etiquetas de contenido y texto</h2>
+            <p>
+              Además de las etiquetas estructurales, HTML dispone de una jerarquía de contenido y
+              texto que ordena la información; los encabezados h1 a h6 establecen niveles de
+              importancia, debiendo existir un único h1 por página, mientras que p define párrafos,
+              blockquote y q citan material ajeno, en bloque o en línea, y ul, ol y li componen
+              listas, desordenadas u ordenadas, que agrupan elementos relacionados; el uso coherente
+              de esta jerarquía refuerza la legibilidad, la accesibilidad y el posicionamiento del
+              documento.
+            </p>
+<pre><code>&lt;h1&gt;Bienvenido&lt;/h1&gt;
+&lt;h2&gt;Sección principal&lt;/h2&gt;
+&lt;p&gt;Párrafo introductorio.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Elemento 1&lt;/li&gt;
+  &lt;li&gt;Elemento 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+          </section>
+
+          <section id="buenas-practicas">
+            <h2>Estándares y buenas prácticas</h2>
+            <p>
+              Para aprovechar al máximo la semántica conviene seguir algunas buenas prácticas: preferir
+              etiquetas semánticas siempre que exista una adecuada al contenido, mantener una
+              estructura lógica y coherente donde cada sección cumpla un papel claro, evitar tanto el
+              exceso de contenedores genéricos como el abuso de etiquetas semánticas fuera de contexto,
+              respetar la especificación de HTML5 y las pautas de accesibilidad, y validar
+              periódicamente las páginas con herramientas de evaluación que verifiquen la estructura,
+              la accesibilidad y el posicionamiento.
+            </p>
+          </section>
+
+          <section id="conclusion">
+            <h2>Conclusión</h2>
+            <p>
+              En síntesis, las etiquetas semánticas otorgan significado al contenido, ordenan la
+              jerarquía del documento, mejoran la experiencia de los usuarios con lectores de
+              pantalla, favorecen el posicionamiento en buscadores y simplifican el mantenimiento del
+              código; su evolución desde las tablas y el div soup hasta las etiquetas estructurales de
+              HTML5 demuestra su importancia central en el desarrollo web, y su aplicación coherente,
+              como la realizada en este sitio, permite construir páginas comprensibles, accesibles y
+              profesionales.
+            </p>
+          </section>
+
+        </div>
+      </div>
+    </main>
+
+    <footer class="seccion">
+      <p>COMMITe de Expertos</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
