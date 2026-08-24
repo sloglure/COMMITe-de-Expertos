@@ -2,15 +2,19 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Portafolio User 5</title>
+    <title>Portafolio de Ignacio Ampuero</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="../../CSS/style.css" />
+    <style>
+      .texto-justificado {
+        text-align: justify;
+      }
+    </style>
   </head>
   <body>
-    <!-- ===================== NAV BAR ===================== -->
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -26,12 +30,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="../../index.html">Nombre del Equipo</a>
+          <a class="navbar-brand" href="../../index.html">Ximena Lovers</a>
         </div>
 
         <div class="collapse navbar-collapse" id="menu-principal">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="../../index.html">Inicio</a></li>
+            <li><a href="../../index.html">Inicio</a></li>
             <li><a href="../../integrantes.html">Miembros</a></li>
             <li class="dropdown">
               <a
@@ -45,11 +49,14 @@
               ></a>
               <ul class="dropdown-menu">
                 <li><a href="../../contenidos.html">Contenidos</a></li>
-                <li><a href="../../pagina-Docker.html">Docker</a></li>
+                <li><a href="../../pagina-Docker.html">Pagina Docker</a></li>
+                <li><a href="../../docker-comandos.html">Docker Comandos</a></li>
                 <li><a href="../../Nginx.html">Nginx</a></li>
-                <li><a href="../../docker-comandos.html">Comandos Docker</a></li>
-                <li><a href="../../css.html">Investigación CSS</a></li>
-                <li><a href="../../html-comun.html">Investigación HTML Comun</a></li>
+                <li><a href="../../css.html">CSS</a></li>
+                <li><a href="../../html-comun.html">HTML Comun</a></li>
+                <li><a href="../../etiquetas-semanticas.html">Etiquetas Semanticas</a></li>
+                <li><a href="../../bootstrap.html">Bootstrap</a></li>
+                <li><a href="../../reflexiones.html">Reflexiones</a></li>
               </ul>
             </li>
           </ul>
@@ -59,28 +66,62 @@
 
     <div class="fila-centrada">
       <div class="panel panel-primary panel-proyecto">
-        <div class="panel-heading"><strong>[Nombre del Proyecto 1]</strong></div>
-        <div class="panel-body">
-          <p><strong>Propósito:</strong> [Descripción del propósito]</p>
-          <p><strong>Tecnologías:</strong> [Tecnología A, Tecnología B]</p>
+        <div class="panel-heading"><strong>opencode-sdd-kit</strong></div>
+        <div class="panel-body texto-justificado">
           <p>
-            <strong>Características:</strong> [Característica principal del proyecto]
+            <strong>Propósito:</strong> Kit de desarrollo Spec-Driven (SDD) para
+            opencode que estructura cada ciclo de vida de una feature mediante
+            constitución, especificación, planificación, descomposición de
+            tareas, revisión e implementación
+          </p>
+          <p><strong>Tecnologías:</strong> TypeScript, opencode (plugins y skills)</p>
+          <p>
+            <strong>Características:</strong> 13 herramientas, 6 skills de agente
+            y 3 plugins de runtime, reglas y plantillas compartidas, 1552 tests
+            automatizados y 80% mutation testing score
           </p>
           <p>
             <strong>Estado:</strong>
-            <span class="label label-success">En progreso</span>
+            <span class="label label-warning">En progreso</span>
           </p>
         </div>
       </div>
 
       <div class="panel panel-primary panel-proyecto">
-        <div class="panel-heading"><strong>[Nombre del Proyecto 2]</strong></div>
-        <div class="panel-body">
+        <div class="panel-heading"><strong>bot-epub-translater</strong></div>
+        <div class="panel-body texto-justificado">
           <p>
-            <strong>Propósito: </strong>[Descripción del propósito]
+            <strong>Propósito: </strong>Bot de Telegram que traduce libros
+            electrónicos (EPUB, MOBI, AZW3, FB2, RTF, DOCX) mediante LLMs Gemini
+            y DeepSeek
           </p>
-          <p><strong>Tecnologías:</strong> [Tecnología A, Tecnología B]</p>
-          <p><strong>Características:</strong> [Característica principal del proyecto]</p>
+          <p><strong>Tecnologías:</strong> Python, API de Telegram, Gemini y DeepSeek</p>
+          <p>
+            <strong>Características:</strong> Parser de EPUB y arquitectura
+            modular, proveedores de traducción intercambiables, salida bilingüe
+            y caché en disco
+          </p>
+          <p>
+            <strong>Estado:</strong>
+            <span class="label label-warning">En progreso</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="panel panel-primary panel-proyecto">
+        <div class="panel-heading"><strong>identity-generator</strong></div>
+        <div class="panel-body texto-justificado">
+          <p>
+            <strong>Propósito: </strong>CLI que genera identidades sintéticas
+            coherentes, con nombre, dirección, teléfono y código postal
+            correspondientes a una misma localidad
+          </p>
+          <p><strong>Tecnologías:</strong> Python, Docker</p>
+          <p>
+            <strong>Características:</strong> Campos coherentes por localidad,
+            exportación JSON y portapapeles, historial de uso, 243 tests
+            automatizados
+          </p>
           <p>
             <strong>Estado:</strong>
             <span class="label label-success">Finalizado</span>
