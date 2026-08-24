@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Investigación sobre CSS</title>
+
+  <!-- Bootstrap 3 desde CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+
+  <!-- Nuestros propios estilos -->
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed"
+          data-toggle="collapse"
+          data-target="#menu-principal"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand" href="index.html">Ximena Lovers</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="menu-principal">
+        <ul class="nav navbar-nav">
+
+          <li>
+            <a href="../index.html">Inicio</a>
+          </li>
+
+          <li>
+            <a href="integrantes.html">Miembros</a>
+          </li>
+
+          <li>
+            <a href="Reflexiones.html">Reflexiones</a>
+          </li>
+
+          <li class="dropdown active">
+            <a href="#" class="dropdown-toggle"
+              data-toggle="dropdown"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false">
+              Investigacion <span class="caret"></span>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a href="contenidos.html">Contenidos</a></li>
+              <li><a href="pagina-Docker.html">Docker</a></li>
+              <li><a href="Nginx.html">Nginx</a></li>
+              <li><a href="docker-comandos.html">Comandos Docker</a></li>
+              <li><a href="css.html">Investigación CSS</a></li>
+              <li><a href="html-comun.html">Investigación HTML Comun</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container seccion">
+
+    <div class="text-center" style="margin-bottom: 30px;">
+      <h1><strong>Investigación sobre CSS</strong></h1>
+      <p class="lead">
+        Conceptos fundamentales de CSS y su aplicación en nuestro sitio web.
+      </p>
+      <hr>
+    </div>
+
+
+    <!-- 1. ¿QUÉ ES CSS -->
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>1. ¿Qué es CSS?</strong></h3>
+      </div>
+
+      <div class="panel-body">
+
+        <p>
+          CSS significa <strong>Cascading Style Sheets</strong>, que en español
+          se traduce como <strong>Hojas de Estilo en Cascada</strong>. Es un
+          lenguaje utilizado para definir la apariencia y presentación de los
+          elementos de una página web.
+        </p>
+
+        <p>
+          Mientras HTML se encarga de definir la estructura y el contenido de
+          una página, CSS permite controlar aspectos visuales como colores,
+          tamaños, espacios, fuentes, alineación y distribución de los elementos.
+        </p>
+
+        <div class="well well-sm">
+          <strong>HTML:</strong><br>
+          <code>&lt;h1&gt;Hola&lt;/h1&gt;</code>
+
+          <p>
+            HTML crea el título dentro de la página.
+          </p>
+        </div>
+
+        <div class="well well-sm">
+          <strong>CSS:</strong><br>
+
+<pre>h1 {
+    color: blue;
+    text-align: center;
+}</pre>
+
+          <p>
+            CSS modifica la apariencia del título, cambiando su color y
+            alineación.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- 2. IMPORTANCIA DE CSS -->
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>2. Importancia de CSS</strong></h3>
+      </div>
+
+      <div class="panel-body">
+
+        <p>
+          CSS es importante porque permite separar la estructura de una página
+          web de su presentación visual. Esto facilita el desarrollo,
+          mantenimiento y modificación del sitio.
+        </p>
+
+        <div class="well well-sm text-center">
+          <p><strong>HTML</strong> → estructura y contenido</p>
+          <p><strong>CSS</strong> → presentación y diseño</p>
+        </div>
+
+        <p>
+          Esta separación permite aplicar una apariencia coherente en diferentes
+          páginas del mismo sitio. Por ejemplo, varias páginas pueden utilizar
+          el mismo archivo CSS para mantener los mismos colores, tamaños,
+          márgenes y estilos.
+        </p>
+
+        <p>
+          En nuestro proyecto utilizamos CSS junto con Bootstrap para mantener
+          una estructura visual uniforme entre las distintas páginas del sitio.
+        </p>
+
+      </div>
+    </div>
+
+
+    <!-- 3. CONTENIDO, ESTRUCTURA Y PRESENTACIÓN -->
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          <strong>3. Contenido, estructura y presentación</strong>
+        </h3>
+      </div>
+
+      <div class="panel-body">
+
+        <p>
+          El desarrollo de una página web puede dividirse en diferentes
+          responsabilidades. HTML define qué elementos existen, mientras
+          CSS determina cómo se muestran visualmente.
+        </p>
+
+        <div class="well well-sm text-center">
+
+          <h4><strong>HTML</strong></h4>
+          <p>↓</p>
+          <p><strong>Estructura</strong></p>
+          <p>↓</p>
+          <p>¿Qué elementos existen?</p>
+
+          <hr>
+
+          <h4><strong>CSS</strong></h4>
+          <p>↓</p>
+          <p><strong>Presentación</strong></p>
+          <p>↓</p>
+          <p>¿Cómo se ven esos elementos?</p>
+
+        </div>
+
+        <p>
+          Por ejemplo, HTML puede crear un encabezado utilizando
+          <code>&lt;h1&gt;</code>, mientras CSS puede establecer su tamaño,
+          color, fuente y alineación.
+        </p>
+
+      </div>
+    </div>
+
+
+    <!-- 4. FORMAS DE APLICAR CSS -->
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          <strong>4. Formas de aplicar CSS</strong>
+        </h3>
+      </div>
+
+      <div class="panel-body">
+
+        <h4><strong>CSS en línea</strong></h4>
+
+        <p>
+          El estilo se coloca directamente dentro del elemento HTML mediante
+          el atributo <code>style</code>.
+        </p>
+
+        <div class="well well-sm">
+          <code>&lt;p style="color: red;"&gt;Hola&lt;/p&gt;</code>
+        </div>
+
+
+        <h4><strong>CSS interno</strong></h4>
+
+        <p>
+          Los estilos se colocan dentro de una etiqueta
+          <code>&lt;style&gt;</code> ubicada normalmente en el
+          <code>&lt;head&gt;</code> del documento HTML.
+        </p>
+
+        <div class="well well-sm">
+
+<pre>&lt;style&gt;
+    p {
+        color: red;
+    }
+&lt;/style&gt;</pre>
+
+        </div>
+
+
+        <h4><strong>CSS externo</strong></h4>
+
+        <p>
+          Los estilos se almacenan en un archivo independiente con extensión
+          <code>.css</code> y posteriormente se enlazan desde el documento HTML.
+        </p>
+
+        <div class="well well-sm">
+          <code>
+            &lt;link rel="stylesheet" href="../css/style.css"&gt;
+          </code>
+        </div>
+
+        <p>
+          En nuestro proyecto utilizamos principalmente CSS externo, ya que
+          contamos con diferentes páginas HTML que pueden compartir los mismos
+          estilos. Esto facilita el mantenimiento y permite conservar una
+          apariencia coherente en todo el sitio.
+        </p>
+
+      </div>
+    </div>
+
+
+    <!-- 5. SELECTORES BÁSICOS -->
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          <strong>5. Selectores básicos</strong>
+        </h3>
+      </div>
+
+      <div class="panel-body">
+
+        <p>
+          Los selectores permiten indicar a CSS qué elementos HTML deben
+          recibir determinados estilos.
+        </p>
+
+
+        <h4><strong>Selector de elemento</strong></h4>
+
+        <p>
+          Selecciona directamente un tipo de elemento HTML.
+        </p>
+
+        <div class="well well-sm">
+
+<pre>p {
+    color: blue;
+}</pre>
+
+        </div>
+
+        <p>
+          En este ejemplo, todos los elementos <code>&lt;p&gt;</code>
+          tendrán el texto de color azul.
+        </p>
+
+
+        <h4><strong>Selector de clase</strong></h4>
+
+        <p>
+          Se utiliza mediante un punto (<code>.</code>) seguido del nombre
+          de la clase.
+        </p>
+
+        <div class="well well-sm">
+
+<pre>.card {
+    padding: 20px;
+}</pre>
+
+        </div>
+
+        <p>
+          El estilo se aplicará a los elementos que tengan la clase
+          <code>card</code>.
+        </p>
+
+
+        <h4><strong>Selector de ID</strong></h4>
+
+        <p>
+          Se utiliza mediante el símbolo numeral (<code>#</code>) seguido
+          del identificador.
+        </p>
+
+        <div class="well well-sm">
+
+<pre>#titulo {
+    color: red;
+}</pre>
+
+        </div>
+
+        <p>
+          El estilo se aplicará al elemento que tenga el ID
+          <code>titulo</code>.
+        </p>
+
+      </div>
+    </div>
+
+
+    <!-- 6. CLASES E IDENTIFICADORES -->
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          <strong>6. Clases e identificadores</strong>
+        </h3>
+      </div>
+
+      <div class="panel-body">
+
+        <p>
+          Las clases y los identificadores permiten aplicar estilos específicos
+          a determinados elementos HTML.
+        </p>
+
+        <div class="well well-sm">
+          <strong>Clase:</strong><br>
+          <code>&lt;div class="card"&gt;</code>
+        </div>
+
+        <p>
+          Una clase puede utilizarse en varios elementos diferentes de una
+          misma página. Por ejemplo, varias tarjetas pueden utilizar la clase
+          <code>card</code> para compartir el mismo diseño.
+        </p>
+
+        <div class="well well-sm">
+          <strong>ID:</strong><br>
+          <code>&lt;div id="principal"&gt;</code>
+        </div>
+
+        <p>
+          Un ID se utiliza normalmente para identificar un elemento específico
+          dentro de una página. Por esta razón, no debería repetirse para
+          diferentes elementos.
+        </p>
+
+        <p>
+          En resumen, una clase es apropiada cuando varios elementos necesitan
+          compartir un estilo, mientras que un ID permite identificar un
+          elemento particular.
+        </p>
+
+      </div>
+    </div>
+
+
+    <!-- 7. MODELO DE CAJA -->
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          <strong>7. Modelo de caja</strong>
+        </h3>
+      </div>
+
+      <div class="panel-body">
+
+        <p>
+          El modelo de caja, o <strong>Box Model</strong>, describe cómo CSS
+          representa los elementos HTML como cajas. Cada elemento está
+          compuesto por diferentes áreas que determinan su tamaño y separación.
+        </p>
+
+        <div class="well well-sm text-center">
+
+          <h4><strong>Margin</strong></h4>
+          <p>↓</p>
+
+          <h4><strong>Border</strong></h4>
+          <p>↓</p>
+
+          <h4><strong>Padding</strong></h4>
+          <p>↓</p>
+
+          <h4><strong>Content</strong></h4>
+
+        </div>
+
+        <h4><strong>Ejemplo:</strong></h4>
+
+        <div class="well well-sm">
+
+<pre>.card {
+    margin: 40px;
+    border: 1px solid black;
+    padding: 20px;
+}</pre>
+
+        </div>
+
+        <p>
+          <strong>Margin:</strong> crea espacio exterior alrededor del elemento.
+        </p>
+
+        <p>
+          <strong>Border:</strong> crea un borde alrededor del elemento.
+        </p>
+
+        <p>
+          <strong>Padding:</strong> crea espacio entre el contenido y el borde.
+        </p>
+
+        <p>
+          <strong>Content:</strong> corresponde al contenido del elemento,
+          como texto, imágenes u otros elementos HTML.
+        </p>
+
+      </div>
+    </div>
+
+
+    <!-- 8. EJEMPLOS UTILIZADOS EN EL SITIO -->
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          <strong>8. Ejemplos de estilos aplicados en nuestro sitio</strong>
+        </h3>
+      </div>
+
+      <div class="panel-body">
+
+        <p>
+          En nuestro sitio web utilizamos CSS para modificar la distribución,
+          los espacios y la apariencia de diferentes elementos de las páginas.
+        </p>
+
+        <p>
+          Un ejemplo de estilo aplicado a una tarjeta o sección del sitio es:
+        </p>
+
+        <div class="well well-sm">
+
+<pre>.card {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}</pre>
+
+        </div>
+
+        <p>
+          En este ejemplo, cada propiedad cumple una función específica:
+        </p>
+
+        <ul>
+          <li>
+            <strong>max-width:</strong>
+            limita el ancho máximo de la tarjeta a 600 píxeles.
+          </li>
+
+          <li>
+            <strong>margin:</strong>
+            genera espacio alrededor de la tarjeta. El valor
+            <code>auto</code> permite centrarla horizontalmente.
+          </li>
+
+          <li>
+            <strong>padding:</strong>
+            genera espacio interno entre el contenido y los límites
+            de la tarjeta.
+          </li>
+
+          <li>
+            <strong>text-align:</strong>
+            centra horizontalmente el texto contenido dentro del elemento.
+          </li>
+        </ul>
+
+        <p>
+          Además, en las diferentes páginas del proyecto utilizamos clases
+          proporcionadas por Bootstrap, como <code>container</code>,
+          <code>panel</code>, <code>panel-heading</code>,
+          <code>panel-body</code>, <code>text-center</code> y
+          <code>navbar</code>. Estas clases permiten construir una interfaz
+          organizada y mantener una presentación consistente.
+        </p>
+
+        <div class="well well-sm">
+
+          <strong>Ejemplo utilizado en esta misma página:</strong><br><br>
+
+          <code>
+            &lt;div class="panel panel-default"&gt;
+          </code>
+
+          <p>
+            Las clases <code>panel</code> y <code>panel-default</code>
+            proporcionan el diseño visual del panel mediante Bootstrap.
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- CONCLUSIÓN -->
+
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Conclusión</strong></h3>
+      </div>
+
+      <div class="panel-body">
+
+        <p>
+          CSS es una herramienta fundamental para el desarrollo web, ya que
+          permite controlar la presentación visual de los documentos HTML.
+          Su utilización permite separar la estructura del contenido de su
+          diseño, facilitando el mantenimiento y la reutilización de estilos.
+        </p>
+
+        <p>
+          En nuestro proyecto, CSS se utiliza junto con Bootstrap para crear
+          páginas organizadas, mantener una apariencia coherente y mejorar
+          la presentación de los contenidos. El uso de hojas de estilo
+          externas permite aplicar reglas comunes a las diferentes páginas
+          del sitio sin tener que repetir el código de estilos.
+        </p>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
