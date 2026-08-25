@@ -124,7 +124,38 @@
 
     <!-- Imagen del equipo juntos -->
     <h2><strong>El equipo</strong></h2>
-    <img src="imagenes/equipo.jpg" alt="Foto del equipo completo" class="foto-equipo" />
+    <!-- Carrusel de imágenes -->
+<div id="carrusel-equipo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicadores (los puntitos abajo) -->
+  <ol class="carousel-indicators">
+    <li data-target="#carrusel-equipo" data-slide-to="0" class="active"></li>
+    <li data-target="#carrusel-equipo" data-slide-to="1"></li>
+    <li data-target="#carrusel-equipo" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Imágenes -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="imagenes/carrusel1.jpg" alt="Imagen 1">
+    </div>
+    <div class="item">
+      <img src="imagenes/carrusel2.jpg" alt="Imagen 2">
+    </div>
+    <div class="item">
+      <img src="imagenes/carrusel3.jpg" alt="Imagen 3">
+    </div>
+  </div>
+
+  <!-- Flechas izquierda/derecha -->
+  <a class="left carousel-control" href="#carrusel-equipo" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+  </a>
+  <a class="right carousel-control" href="#carrusel-equipo" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+  </a>
+
+</div>
 
     <!-- Tecnologías usadas -->
     <section class="seccion text-center">
