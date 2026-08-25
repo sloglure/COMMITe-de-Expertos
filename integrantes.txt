@@ -1,0 +1,4 @@
+Nombre del equipo: Ximena Lovers
+Nombres: Catalina Hernández, Jesús Rodriguez, Jesús Poturo, Ignacio Ampuero, Benjamín Mardones
+Rol o responsabilidad principal asumida por cada integrante: Ignacio Ampuero: Responsable de Git (control de versiones), Benjamin Mardones: Responsable de integración y configuración , Jesus Poturo: QA (tester), Responsable Frontend, Jesus Rodríguez: Responsable de documentación técnica
+Nombre del Scrum Master del equipo: Catalina Hernández
