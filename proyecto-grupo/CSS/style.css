@@ -413,7 +413,7 @@ ul.nav li.dropdown:hover>ul.dropdown-menu {
   height: 500px;
   width: 50%;
 }
-/* PAGINA DE CONTENIDOS */
+/* pagina de contenidos y nginx */
 .H1-Docker {
 
   text-align: center;
@@ -482,42 +482,121 @@ ul.nav li.dropdown:hover>ul.dropdown-menu {
 
 
 
-/* PAGINA DE NGINX */
+.H1-Docker {
+  text-align: center;
+  font-size: 70px;
+  color: #1B5E20;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.estilo-descripcion {
+  text-align: center;
+  font-size: 20px;
+  color: #000000;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.img-Docker {
+  height: 300px;
+  width: 80%;
+  background-color: #e8f5e9;
+  border-radius: 25px;
+  padding: 25px;
+  object-fit: contain;
+}
+
+.img-Docker:hover {
+  transform: scale(1.10);
+  background-color: #A5D6A7;
+}
+
+.H2-Docker {
+  text-align: center;
+  font-size: 50px;
+  color: #1B5E20;
+  margin-top: 300px;
+  margin-bottom: 50px;
+}
+
+.H3-Docker {
+  text-align: center;
+  font-size: 30px;
+  color: #1B5E20;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.margen-top {
+  margin-top: 80px;
+  display: flow-root;
+}
+
+.Imagen1 {
+  height: 300px;
+  width: 50%;
+  border-radius: 20px;
+  padding: 10px;
+  object-fit: contain;
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.Imagen2 {
+  height: 300px;
+  width: 50%; 
+  border-radius: 20px;
+  padding: 10px;
+  object-fit: contain;
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+}
+
 .img-Nginx {
   height: 300px;
   width: 20%;
   background-color: #e8f5e9;
 }
+
 .img-dockerfile {
   height: 300px;
   width: 50%;
   background-color: #e8f5e9;
 }
+
 .img-docker-build {
   height: 300px;
   width: 50%;
   background-color: #e8f5e9;
 }
+
 .img-contenedor {
   height: 100px;
   width: 50%;
   background-color: #e8f5e9;
 }
+
 .img-docker-evidencia {
   height: 500px;
   width: 70%;
   background-color: #e8f5e9;
 }
+
 .img-web-evidencia {
   height: 500px;
   width: 70%;
   background-color: #e8f5e9;
 }
+
 .img-powershell-evidencia {
   height: 300px;
   width: 80%;
   background-color: #e8f5e9;
 }
+
 .Imagengrande {
   height: 500px;
   width: 80%;
@@ -526,59 +605,68 @@ ul.nav li.dropdown:hover>ul.dropdown-menu {
   object-fit: contain;
 }
 
-
-
-
-
-.articulo, div.articulo{
+.articulo, div.articulo {
   max-width: 900px;
   margin: 0 auto;
   text-align: left;
 }
-.titulo-articulo, h2.titulo-articulo, .H2-Docker.titulo-articulo{
+
+.titulo-articulo, h2.titulo-articulo, .H2-Docker.titulo-articulo {
   text-align: left;
   margin-top: 40px;
   margin-bottom: 15px;
 }
-.subtitulo-articulo, h3.subtitulo-articulo, .H3-Docker.subtitulo-articulo{
+
+.subtitulo-articulo, h3.subtitulo-articulo, .H3-Docker.subtitulo-articulo {
   text-align: left;
   margin-top: 30px;
   margin-bottom: 15px;
 }
-.parrafo-articulo, p.parrafo-articulo, .estilo-descripcion.parrafo-articulo{
+
+.parrafo-articulo, p.parrafo-articulo, .estilo-descripcion.parrafo-articulo {
   text-align: left;
 }
-.lista-comandos{
+
+.lista-comandos {
   text-align: left;
   list-style: disc;
   padding-left: 25px;
 }
-.lista-comandos .comando-descripcion{
+
+.lista-comandos .comando-descripcion {
   text-align: left;
   margin-bottom: 5px;
 }
-.lista-comandos .comando-codigo{
+
+.lista-comandos .comando-codigo {
   display: inline-block;
   margin-bottom: 15px;
 }
-.bloque-ejemplos{
+
+.bloque-ejemplos {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.imagen-ejemplo{
+
+.imagen-ejemplo {
   display: block;
   margin: 15px auto 0 auto;
+  margin-left: 0;
+  margin-right: auto;
 }
-.enlace-referencia{
+
+.enlace-referencia {
   margin-top: 30px;
   margin-bottom: 20px;
 }
-.enlace-imagen{
+
+.enlace-imagen {
   display: block;
   width: fit-content;
-  margin: 20px 0
+  margin: 20px 0;
 }
-.enlace-boton{
+
+.enlace-boton {
   display: inline-block;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -590,21 +678,81 @@ ul.nav li.dropdown:hover>ul.dropdown-menu {
   font-weight: bold;
   transition: background-color 0.2s ease;
 }
+
 .enlace-boton:hover,
-.enlace-boton:focus{
+.enlace-boton:focus {
   background-color: #66bb6a;
   color: #ffffff;
   text-decoration: none;
- 
 }
-.imagen-ejemplo{
-  display: block;
-  margin-left: 0;
-  margin-right: auto;
-}
-.Imagen1,
-.Imagen2{
-  display: block;
-  margin-left: 0;
-  margin-right: auto;
+
+
+/* ajuste de pantalla para telefono (MAX 767px)*/
+@media (max-width: 767px) {
+  
+  /* Ajuste de fuentes para que no rompan la pantalla */
+  .H1-Docker {
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+
+  .H2-Docker, 
+  .titulo-articulo, 
+  h2.titulo-articulo, 
+  .H2-Docker.titulo-articulo {
+    font-size: 28px;
+    margin-top: 35px; /* Elimina el espacio de 300px */
+    margin-bottom: 20px;
+  }
+
+  .H3-Docker, 
+  .subtitulo-articulo, 
+  h3.subtitulo-articulo, 
+  .H3-Docker.subtitulo-articulo {
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+
+  .estilo-descripcion, 
+  .parrafo-articulo {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
+  .logo {
+    height: auto;
+    width: 80%;
+  }
+
+  .margen-top {
+    margin-top: 30px;
+  }
+
+  /* Ajuste de imágenes para que no se deformen en los celus */
+  .img-Docker,
+  .Imagen1,
+  .Imagen2,
+  .Imagengrande,
+  .img-Nginx,
+  .img-dockerfile,
+  .img-docker-build,
+  .img-contenedor,
+  .img-docker-evidencia,
+  .img-web-evidencia,
+  .img-powershell-evidencia,
+  .imagen-ejemplo {
+    width: 100% !important;
+    height: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* Evita que los textos de comandos sobresalgan fuera de la pantalla del telefono */
+  .lista-comandos .comando-codigo {
+    word-break: break-all;
+    white-space: pre-wrap;
+  }
 }
