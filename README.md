@@ -1,4 +1,4 @@
-# COMMITe-de-Expertos
+# Ximena Lovers
 Trabajo grupal para el ramo Desarrollo de Aplicaciones Web, se analizara y utilizara en HTML lo siguiente: Docker, Nginx, Bootstrap, CSS 
 
 ## Documentación proceso de Docker
